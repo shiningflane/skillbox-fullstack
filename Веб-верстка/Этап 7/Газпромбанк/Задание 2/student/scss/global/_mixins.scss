@@ -1,10 +1,10 @@
-@mixin vp-1023 {
+@mixin mvp-tablet {
   @media (max-width: $vp-tablet) {
     @content;
   }
 }
 
-@mixin vp-767 {
+@mixin mvp-mobile {
   @media (max-width: $vp-mobile) {
     @content;
   }
