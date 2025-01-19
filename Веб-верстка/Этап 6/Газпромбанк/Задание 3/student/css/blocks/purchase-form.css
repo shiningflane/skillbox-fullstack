@@ -1,0 +1,46 @@
+.purchase-form {
+	width: 100%;
+}
+
+.purchase-form__grid-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	margin: 0 0 20px;
+}
+
+.purchase-form__field-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.purchase-form__field-name {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16.1px;
+	color: #858385;
+	align-self: start;
+	user-select: none;
+}
+
+.purchase-form__radios-wrapper {
+	display: flex;
+	gap: 28px;
+}
+
+.purchase-form__flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.purchase-form__checkbox-wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 450px;
+}
+
+.purchase-form__btn {
+	margin-bottom: 20px;
+}

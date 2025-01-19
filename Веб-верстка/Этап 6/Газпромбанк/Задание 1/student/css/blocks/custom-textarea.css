@@ -1,0 +1,27 @@
+.custom-textarea {
+	display: flex;
+}
+
+.custom-textarea--size-xl {
+	grid-column: span 2;
+	height: 102px;
+}
+
+.custom-textarea__field {
+	outline: none;
+	border: none;
+	font-family: inherit;
+	padding: 0 0 12px 0;
+	font-size: 18px;
+	line-height: 1.2;
+	border-bottom: 1px solid #CACACA;
+	width: 100%;
+}
+
+.custom-textarea__field:focus-visible {
+	border-bottom: 1px solid #1919EF;
+}
+
+.custom-textarea__field::placeholder {
+	color: #9B9B9B;
+}

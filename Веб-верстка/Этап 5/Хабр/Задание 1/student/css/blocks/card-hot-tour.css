@@ -1,0 +1,46 @@
+.card-hot-tour {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	background-color: #E0E5FA;
+	border-radius: 24px;
+	overflow: hidden;
+	padding: 20px 30px;
+}
+
+.card-hot-tour--green {
+	background-color: #D2E8E5;
+}
+
+.card-hot-tour--blue {
+	background-color: #E0EFFA;
+}
+
+.card-hot-tour__img {
+	border-radius: 50%;
+	border: 4px solid #9E5FC4;
+}
+
+.card-hot-tour__city {
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.02em;
+	color: #9E5FC4;
+	margin: 0;
+}
+
+.card-hot-tour__state {
+	margin: 0;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+}
+
+.card-hot-tour__text {
+	margin: 0;
+	font-size: 16px;
+	line-height: 20px;
+}

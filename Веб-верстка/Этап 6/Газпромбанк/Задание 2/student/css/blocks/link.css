@@ -1,0 +1,31 @@
+.link {
+	color: #476BF0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.link:hover {
+	color: #3356D7;
+}
+
+.link--secondary {
+	color: #7E7D87;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.link--secondary:hover {
+	color: inherit;
+}
+
+.link--third {
+	color: #ADAFBA;
+}
+
+.link--fourth {
+	color: #ADAFBA;
+	font-size: 12px;
+	line-height: 14px;
+}

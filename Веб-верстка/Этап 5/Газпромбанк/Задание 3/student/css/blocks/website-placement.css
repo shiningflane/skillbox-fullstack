@@ -1,0 +1,38 @@
+.website-placement {
+	margin: 0 0 100px;
+}
+
+.website-placement__heading {
+	text-align: center;
+	font-size: 32px;
+	line-height: 36px;
+	margin: 0 auto 40px;
+	max-width: 520px;
+	font-weight: 700;
+}
+
+.website-placement__items-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 32px;
+}
+
+.website-placement__img {
+	background-color: #F6F6F6;
+	border-radius: 16px;
+	margin: 0 0 20px;
+}
+
+.website-placement__name {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
+	margin: 0 0 8px;
+}
+
+.website-placement__description {
+	font-size: 15px;
+	line-height: 20px;
+	color: #696E82;
+	margin: 0;
+}

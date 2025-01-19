@@ -1,0 +1,34 @@
+.achievements {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 50px;
+	background-color: #28292D;
+	border-radius: 20px;
+	margin: 0 0 120px;
+}
+
+.achievements__item {
+	width: calc(33.33% - (140px / 3));
+}
+
+.achievements__box {
+	display: flex;
+	flex-direction: column;
+	color: #26AA9A;
+	margin: 0 0 15px;
+}
+
+.achievements__number {
+	
+	font-size: 70px;
+	line-height: 70px;
+	margin: 0 0 5px;
+}
+
+.achievements__text {
+	margin: 0;
+}
+
+.achievements__box--accent {
+	color: #54E9A1;
+}

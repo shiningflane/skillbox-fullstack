@@ -1,0 +1,23 @@
+.btn {
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 17.5px;
+	padding: 10px 35px;
+	color: #1919EF;
+	background: none;
+	border-radius: 60px;
+	border: 1px solid #1919EF;
+	user-select: none;
+}
+
+.btn:disabled {
+	pointer-events: none;
+	opacity: 0.4;
+}
+
+.btn--icon {
+	padding: 18px;
+	border-radius: 50%;
+	background-color: #F6F6F6;
+	color: #1919EF;
+}

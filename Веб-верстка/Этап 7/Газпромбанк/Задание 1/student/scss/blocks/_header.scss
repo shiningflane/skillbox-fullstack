@@ -1,0 +1,129 @@
+.header {
+  background-image: linear-gradient(90deg, $color-free-speech-blue 0%, $color-portage 100%);
+
+  &__top {
+    padding: 12px 0;
+    border-bottom: 1px solid $color-white-alpha-20;
+
+    @include mvp-tablet {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    display: block;
+    color: $color-white;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 19px 0;
+
+    @include mvp-tablet {
+      padding: 13px 0;
+    }
+
+    @include mvp-mobile {
+      padding: 15px 0;
+    }
+  }
+
+  &__logo {
+
+    flex-shrink: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__button {
+    outline: none;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: $color-bunting;
+    color: $color-white;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+
+    &[disabled] {
+      cursor: default;
+      color: $color-manatee;
+      background-color: $color-white-smoke;
+    }
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      background-color: #383F52;
+    }
+
+    &--qr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    @include mvp-mobile {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @include mvp-tablet {
+      display: block;
+      margin-left: 16px;
+      padding: 0;
+      border: none;
+      font-size: 0;
+      background: transparent;
+      color: #FFFFFF;
+    }
+
+    @include mvp-mobile {
+      margin-left: 0;
+    }
+  }
+}

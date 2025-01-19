@@ -1,0 +1,13 @@
+.articles {
+	margin: 0 0 40px;
+}
+
+.articles__list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px 32px;
+}
+
+.articles__item--size-xl {
+	grid-column: span 2;
+}

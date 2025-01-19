@@ -1,0 +1,52 @@
+.header {
+	padding: 20px 0 14px;
+	width: 100%;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.header__link {
+	display: block;
+	width: 203px;
+	height: 50px;
+}
+
+.header__achievement {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 8px;
+}
+
+.header__achievement-textblock {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 4px;
+}
+
+.header__achievement-heading {
+	color: #777B87;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.header__achievement-text {
+	color: #A8ACB7;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.header__achievement-inner {
+	padding: 13px 8px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

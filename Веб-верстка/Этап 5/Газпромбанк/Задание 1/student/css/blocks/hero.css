@@ -1,0 +1,47 @@
+.hero {
+	background-color: #F4F6FA;
+	min-height: calc(100vh - 88px);
+	display: flex;
+	align-items: center;
+	margin: 0 0 100px;
+}
+
+.hero__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 564px;
+	gap: 56px;
+	align-items: center;
+}
+
+.hero__left {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero__title {
+	font-size: 40px;
+	line-height: 48px;
+	margin: 0 0 24px;
+}
+
+.hero__text {
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0 0 48px;
+}
+
+.hero__buttons-wrapper {
+	display: flex;
+	gap: 16px;
+}
+
+.hero__btn {
+	font-size: 15px;
+	line-height: 20px;
+	padding: 18px 32px;
+}
+
+.hero__qr-btn {
+	padding: 16px;
+	cursor: pointer;
+}

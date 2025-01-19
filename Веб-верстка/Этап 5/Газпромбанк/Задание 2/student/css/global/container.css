@@ -1,0 +1,17 @@
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container--articles {
+	display: grid;
+	grid-template-columns: 400px 1fr;
+	gap: 128px;
+}
+
+.container--header {
+	display: flex;
+	flex-flow: column wrap;
+	gap: 20px;
+}

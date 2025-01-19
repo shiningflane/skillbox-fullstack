@@ -1,0 +1,25 @@
+.advantages {
+  margin: 0 0 100px;
+}
+
+.advantages__main-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 0 0 100px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.advantages__main-item--size-xl {
+  grid-column: span 2;
+}
+
+.advantages__second {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}

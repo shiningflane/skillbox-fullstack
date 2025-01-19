@@ -1,0 +1,27 @@
+.link {
+	color: #259DD6;
+	font-size: 14px;
+	line-height: 16.1px;
+	font-weight: 600;
+}
+
+.link:hover {
+	color: #9D1881;
+}
+
+.link--v2 {
+	color: #239DD6;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14.4px;
+	text-decoration: underline;
+}
+
+.link--v3 {
+	color: #343033;
+	font-weight: 500;
+}
+
+.link--v3:hover {
+	color: #259DD6;
+}

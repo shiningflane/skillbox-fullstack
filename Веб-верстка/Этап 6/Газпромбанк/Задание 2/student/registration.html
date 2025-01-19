@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Топ-3 лучших банков для корпоративных клиентов">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Регистрация - Газпромбанк Бизнес-Онлайн</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__link" href="login.html" aria-label="Переход на главную страницу">
+          <svg class="header__logo" width="203" height="50">
+            <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+          </svg>
+        </a>
+        <div class="header__achievement">
+          <div class="header__achievement-textblock">
+            <span class="header__achievement-heading">Топ-3 лучших банков для корпоративных клиентов</span>
+            <span class="header__achievement-text">По&nbsp;версии Markswebb</span>
+          </div>
+          <div class="header__achievement-inner">
+            <svg class="header__achievement-logo" width="24" height="14">
+              <use xlink:href="images/sprite.svg#icon-header-crown"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="registration">
+      <div class="container">
+
+        <div class="registration__wrapper">
+          <div class="registration__col-1">
+            <div class="registration__form-wrapper">
+              <h1 class="registration__heading">Регистрация</h1>
+              <form class="registration-form" action="#" method="post">
+
+                <!-- Для состояния ошибки в инпуте формы используется класс: custom-input--error -->
+                
+                <div class="custom-input custom-input--xl">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" type="text" id="surname" required>
+                    <label class="custom-input__label" for="surname">Фамилия</label>
+                  </div>
+                  <span class="custom-input__error">Поле обязательно для заполнения</span>
+                </div>
+                <div class="custom-input">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" type="text" id="name" required>
+                    <label class="custom-input__label" for="name">Имя</label>
+                  </div>
+                  <span class="custom-input__error">Поле обязательно для заполнения</span>
+                </div>
+                <div class="custom-input">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" type="text" id="second-name" required>
+                    <label class="custom-input__label" for="second-name">Отчество</label>
+                  </div>
+                  <span class="custom-input__error">Поле обязательно для заполнения</span>
+                </div>
+                <div class="custom-input custom-input--xl">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" type="text" id="login" required>
+                    <label class="custom-input__label" for="login">Логин</label>
+                  </div>
+                  <span class="custom-input__error">Поле обязательно для заполнения</span>
+                </div>
+                <div class="custom-input custom-input--xl">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" type="password" id="password" required>
+                    <label class="custom-input__label" for="password">Пароль</label>
+                  </div>
+                  <span class="custom-input__error">Поле обязательно для заполнения</span>
+                </div>
+                <div class="custom-input custom-input--xl">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" type="tel" id="phone" placeholder="+7&nbsp;(ХХХ) ХХХ-ХХ-ХХ" required>
+                    <label class="custom-input__label" for="phone">Телефон</label>
+                  </div>
+                  <span class="custom-input__error">Поле обязательно для заполнения</span>
+                </div>
+                <div class="custom-input custom-input--xl">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" type="email" id="email" required>
+                    <label class="custom-input__label" for="email">Email</label>
+                  </div>
+                  <span class="custom-input__error">Поле обязательно для заполнения</span>
+                </div>
+                <div class="registration-form__code-field">
+                  <span class="registration-form__code-heading">Код с&nbsp;картинки</span>
+                  <div class="custom-input">
+                    <div class="custom-input__wrapper">
+                      <input class="custom-input__field" type="text" id="code" aria-label="Введите код с картинки" required>
+                    </div>
+                    <span class="custom-input__error">Поле обязательно для заполнения</span>
+                  </div>
+                </div>
+                <div class="registration-form__code-image">
+                  <button class="registration-form__code-btn" type="button" aria-label="Обновить картинку с кодом">
+                    <svg class="registration-form__code-icon" width="16" height="16">
+                      <use xlink:href="images/sprite.svg#icon-arrow-circle"></use>
+                    </svg>
+                  </button>
+                  <div class="registration-form__code-wrapper">
+                    <img class="registration-form__code-img" src="images/icon-code.png" alt="изображение с кодом проверки">
+                  </div>
+                </div>
+                <button class="btn btn--size-xl registration-form__btn" type="submit">Продолжить</button>
+                <div class="custom-checkbox custom-checkbox--xl">
+                  <input class="custom-checkbox__box visually-hidden" type="checkbox" id="agree" name="agree" required>
+                  <label class="custom-checkbox__label" for="agree">Согласен на&nbsp;обработку и&nbsp;передачу <a class="link custom-checkbox__link" href="#">персональных данных</a></label>
+                </div>
+              </form>
+            </div>
+            <a href="login.html" class="link registration__link">Войти в&nbsp;ГПБ Бизнес-онлайн</a>
+          </div>
+          <div class="registration__col-2">
+            <span class="registration__heading registration__heading--left">ГПБ Бизнес ID&nbsp;&mdash; один для всех</span>
+              <ol class="advantages-list">
+                <li class="advantages-list__item">Единая учетная запись для работы с&nbsp;продуктами и&nbsp;сервисами, предоставляемыми группой Банк ГПБ (АО) и&nbsp;партнёрами</li>
+                <li class="advantages-list__item">Возможность одновременной работы с&nbsp;несколькими продуктами без необходимости переходить из&nbsp;одной системы в&nbsp;другую</li>
+                <li class="advantages-list__item">Гарантия защиты Ваших персональных данных</li>
+              </ol>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__info">
+          <a class="link link--third footer__link" href="tel:88001001189">
+            <svg width="20" height="20">
+              <use xlink:href="images/sprite.svg#icon-footer-phone"></use>
+            </svg>
+            8&nbsp;800&nbsp;100 11&nbsp;89
+          </a>
+          <a class="link link--third footer__link" href="#">
+            <svg width="20" height="20">
+              <use xlink:href="images/sprite.svg#icon-footer-tg"></use>
+            </svg>
+            Написать в&nbsp;Telegram
+          </a>
+          <span class="footer__copyright">
+            &copy;&nbsp;2024 Банк ГПБ (АО) Генеральная лицензия Банка России &#8470;&nbsp;354
+          </span>
+          <a class="link link--fourth footer__link" href="#">
+            Политика обработки персональных данных
+          </a>
+        </div>
+        <a class="footer__theme" href="#">
+          <span class="footer__theme-text">
+            Светлая тема
+          </span>
+          <svg width="20" height="20">
+            <use xlink:href="images/sprite.svg#icon-footer-theme"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

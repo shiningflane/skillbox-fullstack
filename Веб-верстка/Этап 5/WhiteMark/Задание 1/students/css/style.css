@@ -1,0 +1,12 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/visually-hidden.css";
+@import "./global/container.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "./blocks/btn.css";
+@import "blocks/header.css";
+@import "./blocks/building.css";

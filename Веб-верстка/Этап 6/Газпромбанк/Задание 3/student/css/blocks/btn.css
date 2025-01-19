@@ -1,0 +1,71 @@
+.btn {
+	color: #FFFFFF;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:disabled {
+	color: #858385;
+	background-color: #F0F0F0;
+	pointer-events: none;
+}
+
+.btn--size-m {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: -0.02em;
+	padding: 18px 60px;
+	border-radius: 16px;
+	background: linear-gradient(270deg, #537CCB 0%, #13AED7 100%);
+
+}
+
+.btn--size-m:hover,
+.btn--size-m:focus-visible {
+	background: #537CCB;
+	outline: none;
+}
+
+.btn--v2:hover,
+.btn--v2:focus-visible {
+	background: #9548BD;
+	outline: none;
+}
+
+.btn--v3:hover,
+.btn--v3:focus-visible {
+	background: #D812AE;
+	outline: none;
+}
+
+.btn--size-s {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16.1px;
+	padding: 12px 24px;
+	border-radius: 60px;
+	background-color: #239DD6;
+}
+
+.btn--size-s:hover {
+	background-color: #9D1881;
+}
+
+.btn--size-s:focus-visible {
+	background-color: #771061;
+	outline: none;
+}
+
+.btn--v2 {
+	background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+}
+
+.btn--v3 {
+	background: linear-gradient(270deg, #D812AE 0%, #9548BD 100%);
+}

@@ -1,0 +1,21 @@
+.socials--aside {
+	margin: 0 0 24px;
+}
+
+.socials__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.socials__link {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: none;
+	width: 40px;
+	height: 40px;
+	background-color: #EDEEEF;
+}

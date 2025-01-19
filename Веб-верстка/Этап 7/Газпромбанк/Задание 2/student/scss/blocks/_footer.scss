@@ -1,0 +1,131 @@
+.footer {
+  padding: 40px 0;
+  background-color: $color-solitude-2;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 191px 340px 1fr;
+    column-gap: 129px;
+    align-items: start;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__logo-link {
+    display: flex;
+    margin: 0 0 40px;
+  }
+
+  &__contacts,
+  &__phone,
+  &__feedback,
+  &__location,
+  &__right,
+  &__policy,
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__contacts {
+    row-gap: 16px;
+    margin: 0 0 24px;
+  }
+
+  &__phone {
+    row-gap: 2px;
+  }
+
+  &__phone-link {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  &__phone-text,
+  &__feedback-text,
+  &__location-text,
+  &__policy-link,
+  &__copyright-text,
+  &__language-link {
+    font-size: 13px;
+    line-height: 16px;
+    color: $color-storm-grey-2;
+  }
+
+  &__feedback {
+    row-gap: 12px;
+    margin: 0 0 24px;
+  }
+
+  &__feedback-btn {
+    width: 143px;
+  }
+
+  &__location {
+    row-gap: 8px;
+  }
+
+  &__location-link {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $color-royal-blue-1;
+  }
+
+  &__nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    gap: 16px 60px;
+    margin: 0;
+    padding: 20px 0 0;
+    list-style: none;
+  }
+
+  &__nav-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__right {
+    padding: 20px 40px 0 51px;
+  }
+
+  &__policy {
+    row-gap: 12px;
+    margin: 0 0 32px;
+  }
+
+  &__socials {
+    margin: 0 0 32px;
+  }
+
+  &__copyright {
+    row-gap: 12px;
+    margin: 0 0 20px;
+  }
+
+  &__copyright-text {
+    margin: 0;
+  }
+
+  &__copyright-date {
+    font-size: 10px;
+    line-height: 12px;
+    color: $color-storm-grey-3;
+  }
+
+  &__language-link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+}

@@ -1,0 +1,27 @@
+.offers {
+	margin: 0 0 100px;
+}
+
+.offers__heading {
+	font-size: 32px;
+	line-height: 36px;
+	margin: 0 0 40px;
+}
+
+.offers-list {
+	display: grid;
+	justify-content: stretch;
+	grid-template-columns: 1fr 1fr 280px 1fr;
+	gap: 20px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.offers-list__item--size-xl-vt {
+	grid-row: span 2;
+}
+
+.offers-list__item--size-xl-hz {
+	grid-column: span 2;
+}

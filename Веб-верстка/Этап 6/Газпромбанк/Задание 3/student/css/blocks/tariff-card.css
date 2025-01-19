@@ -1,0 +1,132 @@
+.tariff-card {
+	background-color: #FFFFFF;
+	border: 1px solid #E2E4E8;
+	border-radius: 28px;
+	padding: 36px 32px 24px;
+	position: relative;
+}
+
+.tariff-card__top {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin: 0 0 29px;
+}
+
+.tariff-card__heading {
+	display: inline-block;
+	color: #343033;
+	font-size: 28px;
+	line-height: 33.6px;
+	margin: 0;
+}
+
+.tariff-card__badge {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16.1px;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+	background: linear-gradient(90deg, #537CCB 0%, #9648BD 100%);
+	padding: 6px 12px;
+	border-radius: 60px;
+}
+
+.tariff-card__packs {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 23px;
+	padding: 0 16px;
+}
+
+.tariff-card__pack {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	min-width: 30px;
+}
+
+.tariff-card__pack:first-child::before {
+	content: "";
+	width: 2px;
+	height: 34px;
+	background-color: #999899;
+	position: absolute;
+	left: 116px;
+	top: 105px;
+}
+
+.tariff-card__pack:last-child::before {
+	content: "";
+	width: 2px;
+	height: 34px;
+	background-color: #999899;
+	position: absolute;
+	right: 116px;
+	top: 105px;
+}
+
+.tariff-card__pack-value {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28.8px;
+	text-align: center;
+}
+
+.tariff-card__pack-unit {
+	font-size: 14px;
+	line-height: 18.2px;
+}
+
+.tariff-card__advantages {
+	margin: 0 0 12px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.tariff-card__advantages-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0 0 12px;
+}
+
+.tariff-card__advantages-img {
+	color: #259DD6;
+	width: 40px;
+    height: 40px;
+    padding: 14px 9px;
+    background-color: #F3F4F7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tariff-card__advantages-img--purple {
+	color: #9548BD;
+	padding: 10px 8px;
+}
+
+.tariff-card__advantages-img--pink {
+	color: #D713AD;
+	padding: 9px 9px;
+}
+
+.tariff-card__advantages-text {
+	color: #343033;
+	margin: 0;
+	font-size: 14px;
+	line-height: 18.2px;
+	max-width: 156px;
+}
+
+.tariff-card__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	color: #259DD6;
+	margin: 0 0 28px;
+}

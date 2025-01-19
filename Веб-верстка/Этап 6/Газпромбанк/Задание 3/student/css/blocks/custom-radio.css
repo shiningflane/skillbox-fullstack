@@ -1,0 +1,124 @@
+.custom-radio .custom-radio__label::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	position: absolute;
+	border: 2px solid #259DD6;
+}
+
+.custom-radio .custom-radio__label::after {
+	content: url(../../images/sprite/icon-check.svg);
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.custom-radio--xl {
+	position: relative;
+	border: 2px solid #E2E4E8;
+	border-radius: 20px;
+	margin: 0 0 16px;
+	min-height: 110px;
+}
+
+.custom-radio--xl:last-of-type {
+	margin: 0 0 20px;
+}
+
+.custom-radio--xl:has(.custom-radio__label:hover),
+.custom-radio--xl:has(.custom-radio__radio:focus-visible),
+.custom-radio--xl:has(.custom-radio__radio:checked) {
+	border-color: #259DD6;
+}
+
+.custom-radio--flex-column .custom-radio__label-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0;
+	gap: 8px;
+}
+
+.custom-radio--xl .custom-radio__label {
+	display: block;
+	line-height: 18.2px;
+	padding: 10px 40px 14px 14px;
+}
+
+.custom-radio--xl .custom-radio__label::before {
+	right: 13px;
+	top: 13px;
+}
+
+.custom-radio--xl .custom-radio__label::after {
+	right: 19px;
+	top: 21px;
+}
+
+.custom-radio--s .custom-radio__label::before {
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.custom-radio--s .custom-radio__label::after {
+	left: 6px;
+	top: calc(50% + 2px);
+	transform: translateY(-50%);
+}
+
+.custom-radio--error .custom-radio__label::before {
+	border-color: #D72522;
+}
+
+.custom-radio__label-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0 0 6px;
+}
+
+.custom-radio__label {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16.1px;
+	padding: 4px 0 4px 36px;
+	position: relative;
+	user-select: none;
+	cursor: pointer;
+}
+
+.custom-radio__label:hover::before {
+	border-color: #1883B6;
+}
+
+.custom-radio__radio:focus-visible + .custom-radio__label::before {
+	border-color: #1883B6;
+}
+
+.custom-radio__radio:checked + .custom-radio__label::before {
+	background-color: #1883B6;
+}
+
+.custom-radio__radio:checked ~ .custom-radio__label::after {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.custom-radio__label-extralarge {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.custom-radio__label-large {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19.2px;
+}

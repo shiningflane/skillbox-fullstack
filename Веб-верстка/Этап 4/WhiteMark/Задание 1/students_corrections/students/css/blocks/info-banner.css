@@ -1,0 +1,45 @@
+.info-banner {
+	background: url(../../images/banner-img.jpg) rgba(0, 0, 0, 0.6) no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 85px 90px;
+	border-radius: 0 60px 0 60px;	
+	margin: 0 0 120px;	
+}
+
+.info-banner__title {
+	margin: 0;
+	color: #FFFFFF;
+	font-weight: 300;
+	font-size: 44px;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+
+.info-banner__inner {
+	max-width: 460px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.info-banner__text {
+	color: #FFFFFF;
+	text-align: right;
+	margin: 0 0 30px;
+}
+
+.info-banner__link {
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 7px;
+	max-width: 220px;
+	width: 100%;
+	border-radius: 40px;
+	background-color: #D6D2C4;
+	color: #1D252D;
+	text-align: center;
+}

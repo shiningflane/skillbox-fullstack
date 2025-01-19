@@ -1,0 +1,81 @@
+.advices-card {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px 32px;
+	padding: 0;
+	margin: 0;
+}
+
+.advices-card__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 220px;
+	width: calc(25% - (32px * 3 / 4));
+	min-height: 480px;
+	border-radius: 12px;
+	background-image: url("../../images/product-cards/card1.jpg");
+	background-color: #143DA9;
+	background-repeat: no-repeat;
+	padding: 20px 20px 32px 20px;
+}
+
+.advices-card__item--credit-rating {
+	background-image: #2E5BC3 url(../../images/product-cards/card2.jpg) no-repeat;
+}
+
+.advices-card__item--gold-bars {
+	background-image: url("../../images/product-cards/card3.jpg");
+}
+
+.advices-card__item--tax-deduction {
+	background-image: url("../../images/product-cards/card4.jpg");
+}
+
+.advices-card__item--money-send {
+	background-image: url("../../images/product-cards/card5.jpg");
+}
+
+.advices-card__item--layoff {
+	background-image: url("../../images/product-cards/card6.jpg");
+}
+
+.advices-card__item--hide-balance {
+	background-image: url("../../images/product-cards/card7.jpg");
+}
+
+.advices-card__item--credit-load {
+	background-image: url("../../images/product-cards/card8.jpg");
+}
+
+.advices-card__top {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0 0 20px;
+}
+
+.advices-card__text {
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 16px;
+	margin: 0;
+}
+
+.advices-card__title {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0 0 20px;
+}
+
+.advices-card__link {
+	display: block;
+	width: 246px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 14px;
+	background-color: #476BF0;
+	border-radius: 8px;
+}

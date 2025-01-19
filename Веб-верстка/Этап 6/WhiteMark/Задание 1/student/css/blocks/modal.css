@@ -1,0 +1,45 @@
+/* Текущие стили модалки не потребуется дорабатывать */
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  display: none;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal::after {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	pointer-events: none;
+}
+
+.modal__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+}
+
+/* Плашку с успешной отправкой спозиционируй от modal__content */
+.modal__content {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	min-height: 660px;
+	background-color: #FFFFFF;
+}

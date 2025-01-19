@@ -1,0 +1,26 @@
+.card-advantages-simple {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.card-advantages-simple__img {
+	padding: 16px;
+	background-color: #476BF0;
+	border-radius: 12px;
+	margin: 0 0 20px;
+}
+
+.card-advantages-simple__heading {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0 0 12px;
+}
+
+.card-advantages-simple__text {
+	margin: 0;
+	color: #696E82;
+	font-size: 15px;
+	line-height: 20px;
+}

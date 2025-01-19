@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Топ-3 лучших банков для корпоративных клиентов">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Вход - Газпромбанк Бизнес-Онлайн</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__link" href="login.html" aria-label="Переход на главную страницу">
+            <svg class="header__logo" width="203" height="50">
+              <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+            </svg>
+          </a>
+          <div class="header__achievement">
+            <div class="header__achievement-textblock">
+              <span class="header__achievement-heading">Топ-3 лучших банков для корпоративных клиентов</span>
+              <span class="header__achievement-text">По&nbsp;версии Markswebb</span>
+            </div>
+            <div class="header__achievement-inner">
+              <svg class="header__achievement-logo" width="24" height="14">
+                <use xlink:href="images/sprite.svg#icon-header-crown"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main main--centered">
+      <section class="login">
+        <div class="container">
+          <div class="login__wrapper">
+            <div class="login__main-card">
+              <h1 class="login__heading">Вход в ГПБ Бизнес-онлайн</h1>
+              <form class="login-form" action="#" method="post">
+                
+                <!-- Для состояния ошибки в инпуте формы используется класс: custom-input--error -->
+                 
+                <div class="custom-input custom-input--icon">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" id="username" type="text" required>
+                    <label class="custom-input__label" for="username">Логин</label>
+                    <svg class="custom-input__icon" width="24" height="24">
+                      <use xlink:href="images/sprite.svg#icon-user"></use>
+                    </svg>
+                  </div>
+                  <span class="custom-input__error">Неверный логин</span>
+                </div>
+                <div class="custom-input custom-input--icon">
+                  <div class="custom-input__wrapper">
+                    <input class="custom-input__field" id="password" type="password" required>
+                    <label class="custom-input__label" for="password">Пароль</label>
+                    <svg class="custom-input__icon" width="24" height="24">
+                      <use xlink:href="images/sprite.svg#icon-eye-closed"></use>
+                    </svg>
+                  </div>
+                  <span class="custom-input__error">Неверный пароль</span>
+                </div>
+                <button class="btn login-form__btn" type="submit">Войти</button>
+              </form>
+              <a class="link login__forgot-link" href="forgot-data.html">Забыли логин или пароль?</a>
+            </div>
+            <div class="login__second-card">
+              <span class="login__text">Войти с&nbsp;помощью:
+                <a class="link link--secondary login__text-link" href="#">
+                  <svg class="login__icon" width="32" height="32">
+                    <use xlink:href="images/sprite.svg#icon-gpb"></use>
+                  </svg>
+                  ЭТП ГПБ
+                </a>
+              </span>
+            </div>
+            <a class="link" href="registration.html">Зарегистрироваться</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__info">
+            <a class="link link--third footer__link" href="tel:88001001189">
+              <svg width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-footer-phone"></use>
+              </svg>
+              8&nbsp;800&nbsp;100 11&nbsp;89
+            </a>
+            <a class="link link--third footer__link" href="#">
+              <svg width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-footer-tg"></use>
+              </svg>
+              Написать в&nbsp;Telegram
+            </a>
+            <span class="footer__copyright">
+              &copy;&nbsp;2024 Банк ГПБ (АО) Генеральная лицензия Банка России &#8470;&nbsp;354
+            </span>
+            <a class="link link--fourth footer__link" href="#">
+              Политика обработки персональных данных
+            </a>
+          </div>
+          <a class="footer__theme" href="#">
+            <span class="footer__theme-text">
+              Светлая тема
+            </span>
+            <svg width="20" height="20">
+              <use xlink:href="images/sprite.svg#icon-footer-theme"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

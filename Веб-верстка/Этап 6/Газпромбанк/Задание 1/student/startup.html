@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Стартапам - Газпромбанк.тех</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo-link" href="#" aria-label="Вернуться на главную страницу">
+          <svg class="header__logo-image" width="354" height="19" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#logo-gazprombank-tex"></use>
+          </svg>
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#"> Вакансии </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#"> События </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#"> Блог </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--active" href="#">
+                Стартапам
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#"> Digital start </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__social-link" href="#" aria-label="Перейти в группу Вконтакте">
+          <svg class="header__social-image" width="24" height="24" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-vkontakte"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="request">
+      <h1 class="visually-hidden">
+        Форма отправки заявки для участия в программе
+      </h1>
+      <div class="container">
+        <div class="request__wrapper">
+          <a class="request__back-link" href="#">
+            <svg class="request__back-image" width="46" height="14" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-left-arrow-next"></use>
+            </svg>
+            <span class="request__back-text">Назад</span>
+          </a>
+          <h2 class="request__heading">
+            Заполни заявку для участия в&nbsp;программе
+          </h2>
+          <p class="request__description">
+            Расскажи о&nbsp;своем проекте. Если он&nbsp;нам подходит,
+            мы&nbsp;свяжемся с&nbsp;тобой для обсуждения дальнейшей работы
+          </p>
+          <!-- Форма -->
+          <form class="request-form" action="#" method="post">
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name">
+                Расскажи о&nbsp;себе
+              </legend>
+              <div class="request-form__wrapper request-form__wrapper--col-2">
+                <div class="request-form__col">
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="surname" placeholder="Фамилия*"
+                      aria-label="Фамилия" required />
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="name" placeholder="Имя*" aria-label="Имя"
+                      required />
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="second-name" placeholder="Отчество"
+                      aria-label="Отчество" />
+                  </div>
+                </div>
+                <div class="request-form__col">
+                  <div class="custom-input custom-input--icon">
+                    <input class="custom-input__field" id="email" type="email" name="email" placeholder="E-mail"
+                      aria-label="Почта" required />
+                    <label class="custom-input__label" for="email">Почта*</label>
+                    <svg class="custom-input__icon" width="20" height="20">
+                      <use xlink:href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </div>
+                  <div class="custom-input custom-input--icon">
+                    <input class="custom-input__field" id="birthdate" type="text" name="birthdate"
+                      placeholder="dd/mm/yyyy" aria-label="Дата рождения" required />
+                    <label class="custom-input__label" for="birthdate">Дата рождения*</label>
+                    <svg class="custom-input__icon" width="20" height="20">
+                      <use xlink:href="./images/sprite.svg#icon-calendar"></use>
+                    </svg>
+                  </div>
+                  <div class="custom-input custom-input--icon">
+                    <input class="custom-input__field" id="phone" type="tel" name="phone"
+                      placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" aria-label="Телефон" required />
+                    <label class="custom-input__label" for="phone">Телефон*</label>
+                    <svg class="custom-input__icon" width="20" height="20">
+                      <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name">
+                Расскажи о&nbsp;компании
+              </legend>
+              <div class="request-form__wrapper request-form__wrapper--col-2">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="company-name" placeholder="Название компании*"
+                    aria-label="Название компании" required />
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="url" name="company-site" placeholder="Сайт компании*"
+                    aria-label="Сайт компании" required />
+                </div>
+                <div class="custom-textarea custom-textarea--size-xl">
+                  <textarea class="custom-textarea__field" name="company-description" id="company-description"
+                    aria-label="Описание компании" placeholder="Описание компании*" required></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name">
+                Добавь ссылку на&nbsp;презентацию проекта
+              </legend>
+              <div class="custom-input custom-input--icon">
+                <input class="custom-input__field" id="project-link" type="url" name="project-link"
+                  placeholder="Ссылка*" aria-label="Ссылка" required />
+                <svg class="custom-input__icon" width="20" height="20">
+                  <use xlink:href="./images/sprite.svg#icon-link"></use>
+                </svg>
+              </div>
+            </fieldset>
+
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name request-form__group-name--m28 request-form__group-name--icon">
+                Укажи направление работы твоего стартапа или проекта
+              </legend>
+              <div class="request-form__wrapper">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-services-for-branches"
+                    name="direction" value="direction-services-for-branches" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-services-for-branches">Сервисы для
+                    отделений</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-document" name="direction"
+                    value="direction-document" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-document">Электронный документооборот</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-speech-technologies"
+                    name="direction" value="direction-speech-technologies" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-speech-technologies">Речевые технологии</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-interaction-with-clients"
+                    name="direction" value="direction-interaction-with-clients" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-interaction-with-clients">Каналы взаимодействия
+                    с&nbsp;клиентами</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-identification" name="direction"
+                    value="direction-identification" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-identification">Идентификация
+                    и&nbsp;биометрия</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-investments" name="direction"
+                    value="direction-investments" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-investments">Сервисы для инвестиций и&nbsp;работы
+                    с&nbsp;инвест.портфелем</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-loyalty-systems" name="direction"
+                    value="direction-loyalty-systems" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-loyalty-systems">Сервисы повышения лояльности
+                    и&nbsp;оптимизации
+                    клиентского пути</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-mortgage" name="direction"
+                    value="direction-mortgage" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-mortgage">Ипотека</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-anti-fraud" name="direction"
+                    value="direction-anti-fraud" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-anti-fraud">Антифрод
+                    и&nbsp;кибербезопасность</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-scoring" name="direction"
+                    value="direction-scoring" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-scoring">Скоринг и&nbsp;андеррайтинг</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-hrtech" name="direction"
+                    value="direction-hrtech" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-hrtech">HrTech</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-edtech" name="direction"
+                    value="direction-edtech" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-edtech">EdTech</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-lending" name="direction"
+                    value="direction-lending" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-lending">Кредитование</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-car-loans" name="direction"
+                    value="direction-car-loans" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-car-loans">Автокредитование</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-insurance" name="direction"
+                    value="direction-insurance" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-insurance">Страхование</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-customers-data" name="direction"
+                    value="direction-customers-data" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-customers-data">Обогащение данных
+                    о&nbsp;клиентах</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-crm" name="direction"
+                    value="direction-crm" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-crm">CRM</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-smb" name="direction"
+                    value="direction-smb" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-smb">Сервисы для малого и&nbsp;среднего
+                    бизнеса</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-pfm" name="direction"
+                    value="direction-pfm" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-pfm">PFM</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-legal" name="direction"
+                    value="direction-legal" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-legal">Юридический сервис</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-neobanking" name="direction"
+                    value="direction-neobanking" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-neobanking">Необанкинг</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-digital-marketing" name="direction"
+                    value="direction-digital-marketing" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-digital-marketing">Digital Marketing</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-churn-management" name="direction"
+                    value="direction-churn-management" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-churn-management">Сервисы по&nbsp;работе
+                    с&nbsp;оттоком клиентов</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-new-customers" name="direction"
+                    value="direction-new-customers" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-new-customers">Привлечение новых клиентов</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-helpdesk" name="direction"
+                    value="direction-helpdesk" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-helpdesk">Helpdesk</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-corporate-training" name="direction"
+                    value="direction-corporate-training" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-corporate-training">Корпоративное
+                    обучение</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__box visually-hidden" id="direction-hiring" name="direction"
+                    value="direction-hiring" type="checkbox" required />
+                  <label class="custom-checkbox__label" for="direction-hiring">Найм</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name request-form__group-name--m28">
+                Работал(а)&nbsp;ли ты&nbsp;раньше с&nbsp;Газпромбанком?
+              </legend>
+              <div class="request-form__wrapper request-form__wrapper--col-2">
+                <div class="request-form__col request-form__col--size-small">
+                  <div class="custom-radio">
+                    <input class="custom-radio__box visually-hidden" id="gazprombank-before-yes"
+                      name="gazprombank-before" value="yes" type="radio" required />
+                    <label class="custom-radio__label" for="gazprombank-before-yes">Да</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__box visually-hidden" id="gazprombank-before-no"
+                      name="gazprombank-before" value="no" type="radio" required />
+                    <label class="custom-radio__label" for="gazprombank-before-no">Нет</label>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="employee-name" placeholder="ФИО сотрудника"
+                      aria-label="ФИО сотрудника" />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name request-form__group-name--m28">
+                Откуда узнал(а) о&nbsp;нас?
+              </legend>
+              <div class="request-form__wrapper request-form__wrapper--col-2">
+                <div class="request-form__col request-form__col--size-small">
+                  <div class="custom-radio">
+                    <input class="custom-radio__box visually-hidden" id="find-us-event" name="find-us" value="event"
+                      type="radio" required />
+                    <label class="custom-radio__label" for="find-us-event">Мероприятие</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__box visually-hidden" id="find-us-employee" name="find-us"
+                      value="employee" type="radio" required />
+                    <label class="custom-radio__label" for="find-us-employee">Сотрудник</label>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="employee-name"
+                      placeholder="Название мероприятия / ФИО сотрудника"
+                      aria-label="Название мероприятия или ФИО сотрудника" />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="custom-textarea custom-textarea--size-xl">
+              <textarea class="custom-textarea__field" name="message" id="message" aria-label="Сообщение"
+                placeholder="Сообщение"></textarea>
+            </div>
+
+            <div class="custom-checkbox custom-checkbox--mt20">
+              <input class="custom-checkbox__box visually-hidden" id="agree" name="agree" value="yes" type="checkbox"
+                required />
+              <label class="custom-checkbox__label custom-checkbox__label--size-small" for="agree">Даю согласие
+                на&nbsp;<a class="custom-checkbox__link" href="#">обработку персональных данных</a></label>
+            </div>
+
+            <div class="request-form__btn-wrapper">
+              <button class="btn request-form__btn" type="submit" disabled>
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="request__btn-wrapper">
+          <button class="btn btn--icon request__btn-gotop" type="button" aria-label="Переместиться в начало страницы">
+            <svg width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-arrow-top"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__box">
+          <a class="footer__logo-link" href="#" aria-label="Вернуться на главную страницу">
+            <svg class="footer__logo-image" width="354" height="19" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo-gazprombank-tex" />
+            </svg>
+          </a>
+          <p class="footer__copyright">
+            &copy;&nbsp;1990-2024, Банк ГПБ (АО) Генеральная лицензия Банка
+            России &#8470;&nbsp;354, 117420, г. Москва, ул. Наметкина,
+            д.&nbsp;16, корпус 1.
+            <a class="footer__copyright-link" href="#">Политика обработки и&nbsp;защиты персональных данных</a>
+          </p>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <ul class="footer__inner-list">
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#"> Вакансии </a>
+              </li>
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#"> События </a>
+              </li>
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#"> Блог </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__inner-list">
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#"> Стартапам </a>
+              </li>
+              <li class="footer__inner-item">
+                <a class="footer__link" href="#"> Digital start </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Вконтакте </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

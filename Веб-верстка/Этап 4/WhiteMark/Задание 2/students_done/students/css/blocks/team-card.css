@@ -1,0 +1,97 @@
+.team-card {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 30px;
+
+}
+
+.team-card__item {
+	display: flex;
+	flex-direction: column;
+	width: calc(50% - (30px / 2));
+	padding: 30px;
+	border-radius: 20px;
+	background-color: #F2F3EE;
+	margin: 0;
+}
+
+.team-card__head {
+	margin: 0 0 20px;
+}
+
+.team-card__member-position {
+	display: block;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0 0 5px;
+}
+
+.team-card__member-name {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.team-card__inner {
+	display: flex;
+	gap: 30px;
+}
+
+.team-card__img {
+	border-radius: 12px;
+	align-self: start;
+}
+
+.team-card__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.team-card__item--centered .team-card__text {
+	text-align: center;
+}
+
+.team-card__item--centered .team-card__achievements {
+	text-align: center;
+	width: 270px;
+}
+
+.team-card__text {
+	margin: 0 0 20px;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.team-card__achievements {
+	font-size: 14px;
+	line-height: 18px;
+	text-align: right;
+	margin: 0 0 40px;
+}
+
+.team-card__btn-wrapper {
+	display: flex;
+	align-self: stretch;
+	gap: 10px;
+	margin-top: auto;
+}
+
+.team-card__btn {
+	display: block;
+	width: calc(50% - (10px / 2));
+	text-align: center;
+	border-radius: 40px;
+	background-color: #D6D2C4;
+	padding: 7px;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.team-card__btn--secondary {
+	background-color: initial;
+}

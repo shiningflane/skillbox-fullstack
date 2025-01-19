@@ -1,0 +1,82 @@
+.custom-input {
+	margin: 0 auto 20px;
+}
+
+.custom-input:hover .custom-input__field,
+.custom-input__field:focus-visible {
+	border-color: #3356D7;
+	outline: none;
+}
+
+.custom-input:hover .custom-input__icon,
+.custom-input__field:focus-visible ~ .custom-input__icon {
+	color: #3356D7;
+}
+
+.custom-input--xl {
+	grid-column: span 2;
+	width: 100%;
+}
+
+.custom-input--error .custom-input__field {
+	border-color: #F9C4C2;
+	background-color: #FFFBFB;
+}
+
+.custom-input--error .custom-input__error {
+	display: block;
+}
+
+.custom-input--icon .custom-input__field {
+	padding-right: 56px;
+}
+
+.custom-input__wrapper {
+	position: relative;
+}
+
+.custom-input__field {
+	/* width: 386px; */
+	width: 100%;
+	height: 44px;
+	border: 1px solid #CDCFDE;
+	border-radius: 8px;
+	padding: 14px 16px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #1E222E;
+}
+
+.custom-input__field::placeholder {
+	font-size: 14px;
+	line-height: 16px;
+	color: #8F939F;
+}
+
+.custom-input__label {
+	font-size: 14px;
+	line-height: 16px;
+	color: #8F939F;
+	background-color: #FFFFFF;
+	position: absolute;
+	transform: translateY(-50%);
+	left: 12px;	
+	padding: 0 4px 0 4px;
+	user-select: none;
+}
+
+.custom-input__icon {
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.custom-input__error {
+	display: none;
+	color: #F6514B;
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 8px;
+}

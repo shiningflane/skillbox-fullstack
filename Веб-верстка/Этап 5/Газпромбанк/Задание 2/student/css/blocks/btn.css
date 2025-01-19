@@ -1,0 +1,14 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: "Noto Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #FFFFFF;
+	background-color: #2B3143;
+	border-radius: 8px;
+	border: none;
+}

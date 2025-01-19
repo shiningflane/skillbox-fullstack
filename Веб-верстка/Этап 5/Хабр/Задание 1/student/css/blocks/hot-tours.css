@@ -1,0 +1,31 @@
+.hot-tours {
+	margin: 0 0 80px;
+}
+
+.hot-tours__heading {
+	font-size: 36px;
+	line-height: 40px;
+	font-weight: 700;
+	margin: 0 0 30px;
+	letter-spacing: -0.02em;
+}
+
+.hot-tours__content-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 380px;
+	gap: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.hot-tours__item {
+	padding: 0;
+}
+
+.hot-tours__item--size-xl-vt {
+	grid-row: span 2;
+}
+
+.hot-tours__item--size-xl {
+	grid-column: span 2;
+}

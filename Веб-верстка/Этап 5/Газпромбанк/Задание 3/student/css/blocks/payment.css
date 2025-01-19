@@ -1,0 +1,60 @@
+.payment {
+	margin: 0 0 100px;
+}
+
+.payment__heading {
+	text-align: center;
+	font-size: 32px;
+	line-height: 36px;
+	margin: 0 0 40px;
+}
+
+.payment__steps-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.payment__steps-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.payment__steps-img-wrapper {
+	padding: 26px;
+	background-color: #4C5269;
+	border-radius: 50%;
+	background-image: url(../../images/icon-bg-pay-1.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	margin: 0 0 20px;
+}
+
+.payment__steps-img-wrapper--step2 {
+	background-image: url(../../images/icon-bg-pay-2.png);
+}
+
+.payment__steps-img-wrapper--step3 {
+	background-image: url(../../images/icon-bg-pay-3.png);
+}
+
+.payment__steps-img-wrapper--step4 {
+	background: linear-gradient(180deg, #7B94F1 0%, #6583FF 51%, #C499FF 100%);
+}
+
+.payment__steps-title {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 12px;
+}
+
+.payment__steps-text {
+	font-size: 15px;
+	line-height: 20px;
+	color: #696E82;
+	text-align: center;
+	margin: 0;
+}
