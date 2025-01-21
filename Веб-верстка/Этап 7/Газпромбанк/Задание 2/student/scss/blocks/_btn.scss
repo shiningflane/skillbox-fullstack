@@ -12,11 +12,21 @@
   border-radius: 8px;
   cursor: pointer;
 
+  @include mvp-tablet{
+    font-size: 14px;
+  }
+
   &--second {
     padding: 18px;
     font-size: 15px;
     line-height: 20px;
     background-color: $color-royal-blue-1;
+
+    @include mvp-tablet {
+      font-size: 13px;
+      line-height: 16px;
+      padding: 16px;
+    }
   }
 
   &--third {
@@ -35,6 +45,10 @@
   &--fifth {
     color: $color-black-russian;
     background-color: transparent;
+
+    @include mvp-tablet {
+      padding: 0;
+    }
   }
 
   &--sixth {

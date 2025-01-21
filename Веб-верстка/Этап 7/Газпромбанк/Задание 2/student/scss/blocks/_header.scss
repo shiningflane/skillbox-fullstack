@@ -1,16 +1,29 @@
 .header {
   padding: 16px 0;
 
+  @include mvp-mobile {
+    padding: 15px 0;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
   }
 
-  &__logo-link {
-    display: flex;
-    margin-right: auto;
-  }
+  &__logo {
 
+    &-link {
+      display: flex;
+      margin-right: auto;
+    }
+
+    &-image {
+      @include mvp-mobile {
+        width: 98px;
+        height: 42px;
+      }
+    }
+  }
   &__box {
     display: flex;
     align-items: center;
@@ -19,10 +32,26 @@
     border-radius: 12px;
     column-gap: 20px;
     padding: 5px;
+
+    @include mvp-tablet {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
   }
 
   &__btn {
     width: 128px;
+
+    @include mvp-tablet {
+      width: auto;
+    }
+
+    &--active {
+      @include mvp-tablet {
+        display: none;
+      }
+    }
   }
 
   &__language-link {
@@ -33,5 +62,9 @@
     border: 1px solid $color-hawkes-blue;
     border-radius: 12px;
     padding: 17px 22px 17px 21px;
+
+    @include mvp-tablet {
+      display: none;
+    }
   }
 }
