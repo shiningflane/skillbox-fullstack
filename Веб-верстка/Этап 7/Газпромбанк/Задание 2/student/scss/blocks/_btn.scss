@@ -27,6 +27,16 @@
       line-height: 16px;
       padding: 16px;
     }
+
+    &:hover,
+    &:focus-visible {
+      background-color: #3356D7;
+    }
+
+    &[disabled] {
+      color: #9A9BA0;
+      background-color: #F0F0F0;
+    }
   }
 
   &--third {
@@ -40,6 +50,16 @@
       font-size: 13px;
       line-height: 16px;
       padding: 12px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: #EAECF4;
+    }
+
+    &[disabled] {
+      color: #9A9BA0;
+      background-color: #FFFFFF;
     }
   }
 
@@ -55,6 +75,11 @@
     @include mvp-tablet {
       padding: 0;
     }
+
+    &:hover,
+    &:focus-visible {
+      background-color: #EAECF4;
+    }
   }
 
   &--sixth {
@@ -64,6 +89,16 @@
 
     @include mvp-mobile {
       font-size: 12px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: #383F52;
+    }
+
+    &[disabled] {
+      color: #9A9BA0;
+      background-color: #F0F0F0;
     }
   }
 }

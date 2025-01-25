@@ -12,5 +12,11 @@
     height: 40px;
     border-radius: 50%;
     background-color: $color-solitude-3;
+
+    &:hover,
+    &:focus-visible {
+      background-color: #D2D4DA;
+      outline: none;
+    }
   }
 }

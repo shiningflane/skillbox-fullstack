@@ -97,6 +97,12 @@
       font-size: 18px;
       line-height: 22px;
     }
+
+    &:hover,
+    &:focus-visible {
+      color: #476BF0;
+      outline: none;
+    }
   }
 
   &__phone-text,
@@ -144,6 +150,11 @@
     font-weight: 500;
     line-height: 16px;
     color: $color-royal-blue-1;
+
+    &:hover,
+    &:focus-visible {
+      color: #2F54DF;
+    }
   }
 
   &__nav-list {
@@ -162,6 +173,12 @@
   &__nav-link {
     font-size: 14px;
     line-height: 18px;
+
+    &:hover,
+    &:focus-visible {
+      color: #476BF0;
+      outline: none;
+    }
   }
 
   &__right {
@@ -213,5 +230,10 @@
     display: flex;
     align-items: center;
     column-gap: 8px;
+
+    &:hover,
+    &:focus-visible {
+      color: #1E222E;
+    }
   }
 }

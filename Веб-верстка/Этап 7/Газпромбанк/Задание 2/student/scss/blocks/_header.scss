@@ -40,7 +40,6 @@
 
     &--m28 {
       margin: 0 28px 0 0;
-      column-gap: unset;
 
       @include mvp-tablet {
         margin: 0;
@@ -77,6 +76,10 @@
 
     @include mvp-tablet {
       display: none;
+    }
+
+    &:hover {
+      background-color: #EAECF4;
     }
   }
 }

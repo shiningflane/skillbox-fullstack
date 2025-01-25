@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:focus-visible {
+  outline: 1px solid #3356d7;
+  outline-offset: 4px;
+}
+
 body {
   margin: 0;
   padding: 0;
