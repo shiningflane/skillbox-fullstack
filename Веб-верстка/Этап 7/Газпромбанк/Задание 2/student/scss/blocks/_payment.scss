@@ -1,6 +1,14 @@
 .payment {
   padding: 100px 0;
 
+  @include mvp-tablet {
+    padding: 80px 0;
+  }
+
+  @include mvp-mobile {
+    padding: 60px 0;
+  }
+
   &--partners {
     padding: 0 0 100px;
   }
@@ -11,6 +19,13 @@
     text-align: center;
     font-size: 32px;
     line-height: 36px;
+
+    @include mvp-tablet {
+      max-width: unset;
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -20,6 +35,15 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @include mvp-tablet {
+      gap: 16px;
+    }
+
+    @include mvp-mobile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 15px;
+    }
   }
 
   &__picture {
@@ -27,12 +51,25 @@
     margin: 0 0 20px 0;
     background-color: $color-white-smoke-1;
     border-radius: 16px;
+
+    @include mvp-tablet {
+      margin-bottom: 15px;
+    }
   }
 
   &__heading {
     margin: 0 0 8px 0;
     font-size: 20px;
     line-height: 24px;
+
+    @include mvp-tablet {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @include mvp-mobile {
+      margin-bottom: 5px;
+    }
   }
 
   &__description {
@@ -40,5 +77,9 @@
     font-size: 15px;
     line-height: 20px;
     color: $color-storm-grey-1;
+
+    @include mvp-tablet {
+      font-size: 14px;
+    }
   }
 }

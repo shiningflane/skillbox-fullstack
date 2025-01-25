@@ -6,12 +6,30 @@
     margin: 0 0 100px;
     list-style-type: none;
 
+    @include mvp-tablet {
+      padding: 80px 0 0;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin: 0 0 80px;
+    }
+
+    @include mvp-mobile {
+      padding-top: 60px;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-bottom: 60px;
+    }
+
     &--grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   &__main-item {
+    @include mvp-tablet {
+      grid-column: unset;
+    }
+
     &--flat {
       grid-column: span 2;
     }
@@ -24,36 +42,69 @@
     margin: 0;
     padding: 0 80px;
     list-style: none;
-  }
 
-  &__list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    @include mvp-tablet {
+      padding: 0;
+      gap: 24px;
+    }
 
-  &__list-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 64px;
-    height: 64px;
-    margin: 0 0 20px 0;
-    border-radius: 12px;
-    background-color: $color-royal-blue-1;
-  }
+    @include mvp-mobile {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
 
-  &__list-heading {
-    margin: 0 0 12px 0;
-    font-size: 24px;
-    line-height: 28px;
-  }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  &__list-description {
-    margin: 0;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    color: $color-storm-grey-1;
+    &-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 64px;
+      height: 64px;
+      margin: 0 0 20px 0;
+      border-radius: 12px;
+      background-color: $color-royal-blue-1;
+
+      @include mvp-tablet {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-icon {
+      @include mvp-tablet {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &-heading {
+      margin: 0 0 12px 0;
+      font-size: 24px;
+      line-height: 28px;
+
+      @include mvp-tablet {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &-description {
+      margin: 0;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      color: $color-storm-grey-1;
+
+      @include mvp-tablet {
+        font-size: 14px;
+      }
+    }
   }
 }

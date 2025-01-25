@@ -35,6 +35,12 @@
     font-size: 15px;
     line-height: 20px;
     background-color: $color-white;
+
+    @include mvp-tablet {
+      font-size: 13px;
+      line-height: 16px;
+      padding: 12px;
+    }
   }
 
   &--fourth {
@@ -55,5 +61,9 @@
     padding: 12px;
     font-size: 13px;
     line-height: 16px;
+
+    @include mvp-mobile {
+      font-size: 12px;
+    }
   }
 }
