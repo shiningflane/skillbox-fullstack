@@ -30,6 +30,41 @@
   &--blue {
     color: $color-white;
     background-color: $color-cornflower-blue;
+    @include mvp-tablet {
+      flex-direction: row;
+      gap: 28px;
+    }
+
+    @include mvp-mobile {
+      flex-direction: column;
+      gap: unset;
+    }
+
+    .card-advantages {
+
+      &__image {
+        @include mvp-tablet {
+          width: 340px;
+          height: 300px;
+        }
+
+        @include mvp-mobile {
+          width: 345px;
+          height: 190px;
+        }
+      }
+
+      &__content {
+
+        @include mvp-tablet {
+          padding: 0;
+        }
+
+        @include mvp-mobile {
+          padding: 30px 30px 34px;
+        }
+      }
+    }
   }
 
   &--dark-gray {
@@ -46,12 +81,27 @@
     grid-column: span 1;
     min-height: 640px;
 
+    @include mvp-tablet {
+      min-height: 408px;
+    }
+
     .card-advantages__content {
       padding: 60px;
+
+      @include mvp-tablet {
+        padding: 30px 30px 0;
+      }
     }
 
     .card-advantages__picture {
       margin: auto 0 0 0;
+    }
+
+    .card-advantages__image {
+      @include mvp-tablet {
+        width: 345px;
+        height: 186px;
+      }
     }
   }
 
@@ -72,11 +122,21 @@
     row-gap: 16px;
     margin: 0;
     padding: 0 0 0 22px;
+
+    @include mvp-tablet {
+      row-gap: 10px;
+      padding-left: 18px;
+    }
   }
 
   &__subitem {
     font-size: 18px;
     line-height: 24px;
+
+    @include mvp-tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__content {

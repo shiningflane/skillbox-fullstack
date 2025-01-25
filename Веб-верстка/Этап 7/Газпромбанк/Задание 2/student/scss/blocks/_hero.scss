@@ -4,6 +4,10 @@
   &--partners {
     .hero__heading {
       margin: 0 0 48px 0;
+
+      @include mvp-tablet {
+        margin-bottom: 40px;
+      }
     }
 
     .hero__wrapper {
@@ -11,6 +15,10 @@
 
     .hero__btn {
       width: 258px;
+
+      @include mvp-tablet {
+        width: 233px;
+      }
     }
   }
 

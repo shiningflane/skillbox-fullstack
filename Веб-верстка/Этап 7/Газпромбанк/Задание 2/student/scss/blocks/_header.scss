@@ -11,7 +11,6 @@
   }
 
   &__logo {
-
     &-link {
       display: flex;
       margin-right: auto;
@@ -27,16 +26,29 @@
   &__box {
     display: flex;
     align-items: center;
-    margin: 0 24px 0 0;
+    margin: 0 38px 0 0;
     border: 1px solid $color-hawkes-blue;
     border-radius: 12px;
-    column-gap: 20px;
+    column-gap: 6px;
     padding: 5px;
 
     @include mvp-tablet {
       border: none;
       padding: 0;
       margin: 0;
+    }
+
+    &--m28 {
+      margin: 0 28px 0 0;
+      column-gap: unset;
+
+      @include mvp-tablet {
+        margin: 0;
+      }
+
+      .header__btn--active {
+        width: 138px;
+      }
     }
   }
 

@@ -22,6 +22,10 @@
 
     &--grid {
       grid-template-columns: repeat(2, 1fr);
+
+      @include mvp-mobile {
+        grid-template-columns: 1fr;
+      }
     }
   }
 
@@ -32,6 +36,10 @@
 
     &--flat {
       grid-column: span 2;
+
+      @include mvp-mobile {
+        grid-column: unset;
+      }
     }
   }
 
