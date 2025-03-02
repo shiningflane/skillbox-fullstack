@@ -1,0 +1,58 @@
+.breadcrumbs {
+	margin-bottom: 40px;
+
+	&__list {
+		display: flex;
+		gap: 24px;
+		margin: 0;
+		padding: 0;
+
+		@include mvp-mobile {
+			gap: 15px;
+		}
+	}
+
+	&__item {
+		list-style: none;
+
+		&:last-child {
+			overflow: hidden;
+			flex-shrink: 1;
+		}
+	}
+
+	&__link {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.33;
+		color: $color-bokara-grey;
+		position: relative;
+		display: flex;
+		text-wrap: nowrap;
+
+		@include mvp-mobile {
+			font-size: 10px;
+			line-height: 1.2;
+		}
+
+		&:not(span)::after {
+			content: "/";
+			position: absolute;
+			right: -12px;
+			top: 50%;
+			transform: translateY(-50%);
+
+			@include mvp-mobile {
+				right: -8px;
+			}
+		}
+
+		&:not(a) {
+			color: $color-quick-silver;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			display: block;
+		}
+	}
+}

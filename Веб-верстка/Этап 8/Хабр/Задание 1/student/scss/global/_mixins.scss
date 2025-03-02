@@ -1,0 +1,11 @@
+@mixin mvp-tablet {
+	@media (max-width: $vp-tablet) {
+		@content;
+	}
+}
+
+@mixin mvp-mobile {
+	@media (max-width: $vp-mobile) {
+		@content;
+	}
+}

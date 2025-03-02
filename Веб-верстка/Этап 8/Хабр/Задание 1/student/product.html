@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Houzzy - Интернет магазин товаров для дома">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Houzzy - Интернет магазин товаров для дома</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a class="header__logo-link" href="#" aria-label="Переход на главную страницу">
+					<svg class="header__logo" width="110" height="40" aria-hidden="true">
+						<use xlink:href="images/sprite.svg#header-logo"></use>
+					</svg>
+				</a>
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Акции</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Доставка</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Оплата</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">События</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<button class="header__burger" type="button" aria-label="Открыть бургерное меню">
+					<svg class="header__burger-logo" width="32" height="32" aria-hidden="true">
+						<use xlink:href="images/sprite.svg#icon-burger"></use>
+					</svg>
+				</button>
+				<div class="header__buttons-wrapper">
+					<button class="header__button" href="#" type="button" aria-label="Поиск по сайту">
+						<svg class="header__button-logo" width="24" height="24" aria-hidden="true">
+							<use xlink:href="images/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
+					<button class="header__button" href="#" type="button" aria-label="Посмотреть избранные товары">
+						<svg class="header__button-logo" width="24" height="24" aria-hidden="true">
+							<use xlink:href="images/sprite.svg#icon-like"></use>
+						</svg>
+					</button>
+					<button class="header__button" href="#" type="button" aria-label="Посмотреть корзину">
+						<svg class="header__button-logo" width="24" height="24" aria-hidden="true">
+							<use xlink:href="images/sprite.svg#icon-bag"></use>
+						</svg>
+					</button>
+					<button class="header__button" href="#" type="button" aria-label="Связаться с нами">
+						<svg class="header__button-logo" width="24" height="24" aria-hidden="true">
+							<use xlink:href="images/sprite.svg#icon-phone"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">Каталог</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">Home Decor</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<span class="breadcrumbs__link" href="#">Ваза Керамическая Terravisori</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<section class="product-card">
+			<div class="container">
+				<div class="product-card__wrapper">
+					<div class="product-card__images">
+						<div class="product-card__main-img">
+							<picture>
+								<source media="(max-width:767px)"
+									srcset="images/image-main-mobile.jpg 1x, images/image-main-mobile@2x.jpg 2x">
+								<source media="(max-width:1023px)"
+									srcset="images/image-main-tablet.jpg 1x, images/image-main-tablet@2x.jpg 2x">
+								<img class="product-card__img" src="images/image-main-desktop.jpg"
+									srcset="images/image-main-desktop@2x.jpg 2x" alt="Фотография вазы" width="600"
+									height="560">
+							</picture>
+							<span class="product-card__sale">-20%</span>
+						</div>
+						<picture>
+							<source media="(max-width:767px)"
+								srcset="images/image-2-mobile.jpg 1x, images/image-2-mobile@2x.jpg 2x">
+							<source media="(max-width:1023px)"
+								srcset="images/image-2-tablet.jpg 1x, images/image-2-tablet@2x.jpg 2x">
+							<img class="product-card__img" src="images/image-2-desktop.jpg"
+								srcset="images/image-2-desktop@2x.jpg 2x" alt="Фотография вазы" width="120"
+								height="138">
+						</picture>
+						<picture>
+							<source media="(max-width:767px)"
+								srcset="images/image-3-mobile.jpg 1x, images/image-3-mobile@2x.jpg 2x">
+							<source media="(max-width:1023px)"
+								srcset="images/image-3-tablet.jpg 1x, images/image-3-tablet@2x.jpg 2x">
+							<img class="product-card__img" src="images/image-3-desktop.jpg"
+								srcset="images/image-3-desktop@2x.jpg 2x" alt="Фотография вазы" width="120"
+								height="138">
+						</picture>
+						<picture>
+							<source media="(max-width:767px)"
+								srcset="images/image-4-mobile.jpg 1x, images/image-4-mobile@2x.jpg 2x">
+							<source media="(max-width:1023px)"
+								srcset="images/image-4-tablet.jpg 1x, images/image-4-tablet@2x.jpg 2x">
+							<img class="product-card__img" src="images/image-4-desktop.jpg"
+								srcset="images/image-4-desktop@2x.jpg 2x" alt="Фотография вазы" width="120"
+								height="138">
+						</picture>
+						<picture>
+							<source media="(max-width:767px)"
+								srcset="images/image-5-mobile.jpg 1x, images/image-5-mobile@2x.jpg 2x">
+							<source media="(max-width:1023px)"
+								srcset="images/image-5-tablet.jpg 1x, images/image-5-tablet@2x.jpg 2x">
+							<img class="product-card__img" src="images/image-5-desktop.jpg"
+								srcset="images/image-5-desktop@2x.jpg 2x" alt="Фотография вазы" width="120"
+								height="138">
+						</picture>
+					</div>
+					<div class="product-card__info">
+						<span class="product-card__category">Home decor</span>
+						<h1 class="product-card__heading">Ваза керамическая terravisori</h1>
+						<div class="product-card__payment">
+							<div class="product-card__price">
+								<span class="product-card__price-current">1&nbsp;520&nbsp;руб.</span>
+								<span class="product-card__price-old">1&nbsp;900&nbsp;руб.</span>
+							</div>
+							<div class="product-card__credit">
+								<svg class="product-card__credit-logo" width="68" height="20">
+									<use xlink:href="images/sprite.svg#icon-dolyami"></use>
+								</svg>
+								<span class="product-card__credit-info">4&nbsp;платежа по&nbsp;380&nbsp;руб.</span>
+								<svg class="product-card__credit-button" width="16" height="16">
+									<use xlink:href="images/sprite.svg#icon-right-arrow"></use>
+								</svg>
+							</div>
+							<form class="order-form" action="#" method="post" name="order">
+								<div class="order-form__colors">
+									<div class="custom-radio">
+										<input class="custom-radio__radio" type="radio" name="color" value="platinum">
+									</div>
+									<div class="custom-radio">
+										<input class="custom-radio__radio" type="radio" name="color" value="silver-foil">
+									</div>
+									<div class="custom-radio">
+										<input class="custom-radio__radio" type="radio" name="color" value="metallic-silver">
+									</div>
+									<div class="custom-radio">
+										<input class="custom-radio__radio" type="radio" name="color" value="bokara-grey">
+									</div>
+								</div>
+								<div class="order-form__buttons">
+									<button class="btn order-form__btn" type="submit">
+										<svg class="order-form__logo" width="24" height="24" aria-hidden="true">
+											<use xlink:href="images/sprite.svg#icon-bag"></use>
+										</svg>
+										Добавить в&nbsp;корзину
+									</button>
+									<button class="btn btn--second order-form__btn-2">
+										<svg class="order-form__logo" width="24" height="24" aria-hidden="true">
+											<use xlink:href="images/sprite.svg#icon-like"></use>
+										</svg>
+									</button>
+								</div>
+							</form>
+							<div class="product-card__links">
+								<a class="link product-card__link" href="#">Подробные характеристики</a>
+								<a class="link product-card__link" href="#">Как сделать заказ</a>
+							</div>
+							<div class="product-card__questions">
+								<span class="product-card__question">Есть вопросы по&nbsp;товару или заказу?</span>
+								<a class="product-card__tel" href="tel:88000000000">8 (800) 000-00-00</a>
+								<span class="product-card__work-time">ежедневно с&nbsp;10:00 до&nbsp;20:00 по&nbsp;МСК</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
