@@ -1,0 +1,17 @@
+.link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.28;
+	color: $color-bokara-grey;
+	text-decoration: underline 1px dashed;
+	text-underline-offset: 2px;
+
+	@include mvp-tablet {
+		text-underline-offset: 4px;
+	}
+
+	@include mvp-mobile {
+		font-size: 12px;
+		line-height: 1.33;
+	}
+}

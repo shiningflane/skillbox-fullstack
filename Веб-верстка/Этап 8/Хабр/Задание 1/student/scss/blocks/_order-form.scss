@@ -1,0 +1,53 @@
+.order-form {
+
+	&__radios {
+		display: flex;
+		gap: 4px;
+		margin: 0 0 46px;
+
+		@media (max-width: 1325px) {
+			margin: 0 0 20px;
+		}
+
+		@include mvp-tablet {
+			margin: 0 0 30px;
+		}
+
+		@include mvp-mobile {
+			gap: 2px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		gap: 22px;
+
+		@include mvp-tablet {
+			gap: 17px;
+		}
+
+		@include mvp-mobile {
+			gap: 9px;
+		}
+	}
+
+	&__btn {
+		max-width: 420px;
+		width: 100%;
+		gap: 10px;
+
+		@include mvp-tablet {
+			max-width: 620px;
+		}
+	}
+
+	&__logo {
+		color: $color-white;
+
+		@include mvp-mobile {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 18px;
+	border: none;
+	color: $color-white;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.28;
+	background-color: $color-bokara-grey;
+	cursor: pointer;
+
+	@include mvp-mobile {
+		padding: 16px;
+		font-size: 12px;
+		line-height: 1.33;
+	}
+
+	&--second {
+		background-color: unset;
+	}
+}
