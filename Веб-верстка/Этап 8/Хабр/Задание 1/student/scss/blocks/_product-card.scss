@@ -57,6 +57,7 @@
 		@include mvp-mobile {
 			grid-row: unset;
 			grid-column: span 4;
+			height: 100%;
 		}
 	}
 
@@ -68,6 +69,10 @@
 
 			@include mvp-tablet {
 				height: auto;
+			}
+
+			@include mvp-mobile {
+				height: 100%;
 			}
 		}
 
