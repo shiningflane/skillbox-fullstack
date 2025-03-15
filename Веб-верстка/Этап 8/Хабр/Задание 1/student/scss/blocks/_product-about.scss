@@ -1,0 +1,46 @@
+.product-about {
+	margin-bottom: 120px;
+
+	@include mvp-tablet {
+		margin-bottom: 60px;
+	}
+
+	@include mvp-mobile {
+		margin-bottom: 50px;
+	}
+
+	&__heading {
+		color: $color-bokara-grey;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 1.167;
+		letter-spacing: -0.04em;
+		margin: 0 0 25px;
+
+		@include mvp-tablet {
+			font-size: 36px;
+			line-height: 1.111;
+			margin: 0 0 20px;
+		}
+
+		@include mvp-mobile {
+			font-size: 26px;
+			line-height: 1.23;
+			margin: 0 0 15px;
+		}
+	}
+
+	&__text {
+		color: $color-bokara-grey;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.5;
+		margin: 0 0 15px;
+
+		@include mvp-mobile {
+			font-size: 14px;
+			line-height: 1.43;
+			margin: 0 0 10px;
+		}
+	}
+}

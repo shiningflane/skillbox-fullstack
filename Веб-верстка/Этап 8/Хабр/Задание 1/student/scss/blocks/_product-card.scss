@@ -1,5 +1,15 @@
 .product-card {
 
+	margin-bottom: 120px;
+
+	@include mvp-tablet {
+		margin-bottom: 60px;
+	}
+
+	@include mvp-mobile {
+		margin-bottom: 50px;
+	}
+
 	&__wrapper {
 		display: flex;
 		gap: 100px;

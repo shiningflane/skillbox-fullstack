@@ -5,6 +5,9 @@
 	color: $color-bokara-grey;
 	text-decoration: underline 1px dashed;
 	text-underline-offset: 2px;
+	border: none;
+	cursor: pointer;
+	padding: 0;
 
 	@include mvp-tablet {
 		text-underline-offset: 4px;
