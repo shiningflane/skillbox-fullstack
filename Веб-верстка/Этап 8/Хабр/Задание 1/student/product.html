@@ -35,22 +35,22 @@
 					</svg>
 				</button>
 				<div class="header__buttons-wrapper">
-					<button class="header__button" href="#" type="button" aria-label="Поиск по сайту">
+					<button class="header__button" type="button" aria-label="Поиск по сайту">
 						<svg class="header__button-logo" width="24" height="24" aria-hidden="true">
 							<use xlink:href="images/sprite.svg#icon-search"></use>
 						</svg>
 					</button>
-					<button class="header__button" href="#" type="button" aria-label="Посмотреть избранные товары">
+					<button class="header__button" type="button" aria-label="Посмотреть избранные товары">
 						<svg class="header__button-logo" width="24" height="24" aria-hidden="true">
 							<use xlink:href="images/sprite.svg#icon-like"></use>
 						</svg>
 					</button>
-					<button class="header__button" href="#" type="button" aria-label="Посмотреть корзину">
+					<button class="header__button" type="button" aria-label="Посмотреть корзину">
 						<svg class="header__button-logo" width="24" height="24" aria-hidden="true">
 							<use xlink:href="images/sprite.svg#icon-bag"></use>
 						</svg>
 					</button>
-					<button class="header__button" href="#" type="button" aria-label="Связаться с нами">
+					<button class="header__button" type="button" aria-label="Связаться с нами">
 						<svg class="header__button-logo" width="24" height="24" aria-hidden="true">
 							<use xlink:href="images/sprite.svg#icon-phone"></use>
 						</svg>
@@ -64,16 +64,16 @@
 			<div class="container">
 				<ul class="breadcrumbs__list">
 					<li class="breadcrumbs__item">
-						<a class="breadcrumbs__link" href="#">Главная</a>
+						<a class="link breadcrumbs__link" href="#">Главная</a>
 					</li>
 					<li class="breadcrumbs__item">
-						<a class="breadcrumbs__link" href="#">Каталог</a>
+						<a class="link breadcrumbs__link" href="#">Каталог</a>
 					</li>
 					<li class="breadcrumbs__item">
-						<a class="breadcrumbs__link" href="#">Home Decor</a>
+						<a class="link breadcrumbs__link" href="#">Home Decor</a>
 					</li>
 					<li class="breadcrumbs__item">
-						<span class="breadcrumbs__link" href="#">Ваза Керамическая Terravisori</span>
+						<span class="breadcrumbs__link">Ваза Керамическая Terravisori</span>
 					</li>
 				</ul>
 			</div>
@@ -135,8 +135,8 @@
 									<span class="product-card__price-current">1&nbsp;520&nbsp;руб.</span>
 									<span class="product-card__price-old">1&nbsp;900&nbsp;руб.</span>
 								</div>
-								<a class="product-card__credit" href="#">
-									<svg class="product-card__credit-logo" width="68" height="20">
+								<a class="product-card__credit" href="#" aria-label="Купить в рассрочку долями">
+									<svg class="product-card__credit-logo" width="68" height="20" aria-hidden="true">
 										<use xlink:href="images/sprite.svg#icon-dolyami"></use>
 									</svg>
 									<span class="product-card__credit-info">4&nbsp;платежа по&nbsp;380&nbsp;руб.</span>
@@ -148,19 +148,19 @@
 							<form class="order-form product-card__order" action="#" method="post" name="order">
 								<div class="order-form__radios">
 									<div class="custom-radio custom-radio--platinum">
-										<input class="custom-radio__radio visually-hidden" type="radio" name="color" value="platinum" id="color-platinum">
+										<input class="custom-radio__radio visually-hidden" type="radio" name="color" value="platinum" id="color-platinum" required>
 										<label class="custom-radio__label" for="color-platinum"></label>
 									</div>
 									<div class="custom-radio custom-radio--silver-foil">
-										<input class="custom-radio__radio visually-hidden" type="radio" name="color" value="silver-foil" id="color-silver-foil">
+										<input class="custom-radio__radio visually-hidden" type="radio" name="color" value="silver-foil" id="color-silver-foil" required>
 										<label class="custom-radio__label" for="color-silver-foil"></label>
 									</div>
 									<div class="custom-radio custom-radio--metallic-silver">
-										<input class="custom-radio__radio visually-hidden" type="radio" name="color" value="metallic-silver" id="color-metallic-silver">
+										<input class="custom-radio__radio visually-hidden" type="radio" name="color" value="metallic-silver" id="color-metallic-silver" required>
 										<label class="custom-radio__label" for="color-metallic-silver"></label>
 									</div>
 									<div class="custom-radio custom-radio--bokara-grey">
-										<input class="custom-radio__radio visually-hidden" type="radio" name="color" value="bokara-grey" id="color-bokara-grey">
+										<input class="custom-radio__radio visually-hidden" type="radio" name="color" value="bokara-grey" id="color-bokara-grey" required>
 										<label class="custom-radio__label" for="color-bokara-grey"></label>
 									</div>
 								</div>
@@ -171,7 +171,7 @@
 										</svg>
 										Добавить в&nbsp;корзину
 									</button>
-									<button class="btn btn--second order-form__btn-2" type="button">
+									<button class="btn btn--second order-form__btn-2" type="button" aria-label="Добавить в избранное">
 										<svg class="order-form__logo" width="24" height="24" aria-hidden="true">
 											<use xlink:href="images/sprite.svg#icon-like"></use>
 										</svg>
@@ -179,12 +179,12 @@
 								</div>
 							</form>
 							<div class="product-card__links">
-								<button class="link link--second product-card__link" href="#">Подробные характеристики</button>
-								<button class="link link--second product-card__link" href="#">Как сделать заказ</button>
+								<button class="link link--second product-card__link" type="button">Подробные характеристики</button>
+								<button class="link link--second product-card__link" type="button">Как сделать заказ</button>
 							</div>
 							<div class="product-card__questions">
 								<span class="product-card__question">Есть вопросы по&nbsp;товару или заказу?</span>
-								<a class="product-card__tel" href="tel:88000000000">8 (800) 000-00-00</a>
+								<a class="link product-card__tel" href="tel:88000000000">8 (800) 000-00-00</a>
 								<span class="product-card__work-time">ежедневно с&nbsp;10:00 до&nbsp;20:00 по&nbsp;МСК</span>
 							</div>
 						</div>
@@ -196,7 +196,7 @@
 			<div class="container">
 				<h2 class="product-about__heading">О&nbsp;товаре</h2>
 				<p class="product-about__text">Изящная декоративная стеклянная ваза для домашнего декора. Ваза идеально подойдет для цветов и&nbsp;всевозможных творческих композиций. Керамическая ваза послужит прекрасным декором для вашего дома и&nbsp;дачи. Может использоваться в&nbsp;качестве подарка маме, бабушке, сестре, жене на&nbsp;8&nbsp;марта, день рождения, новоселье и&nbsp;т.д. Благодаря уникальному дизайну и&nbsp;цвету данная ваза станет украшением любого стола и&nbsp;интерьера и&nbsp;никого не&nbsp;оставит равнодушным.</p>
-				<button class="link product-about__link">Раскрыть подробнее</button>
+				<button class="link product-about__link" type="button">Раскрыть подробнее</button>
 			</div>
 		</section>
 		<section class="product-interior">
@@ -261,29 +261,29 @@
 							<div class="socials footer__socials">
 								<ul class="socials__list">
 									<li class="socials__item">
-										<a class="socials__link" href="#">
-											<svg class="socials__icon" width="24" height="24">
+										<a class="link socials__link" href="#" aria-label="Перейти в Whatsapp">
+											<svg class="socials__icon" width="24" height="24" aria-hidden="true">
 												<use xlink:href="images/sprite.svg#icon-whatsapp"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="socials__item">
-										<a class="socials__link" href="#">
-											<svg class="socials__icon" width="24" height="24">
+										<a class="link socials__link" href="#" aria-label="Перейти в Telegram">
+											<svg class="socials__icon" width="24" height="24" aria-hidden="true">
 												<use xlink:href="images/sprite.svg#icon-tg"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="socials__item">
-										<a class="socials__link" href="#">
-											<svg class="socials__icon" width="24" height="24">
+										<a class="link socials__link" href="#" aria-label="Перейти во Вконтакте">
+											<svg class="socials__icon" width="24" height="24" aria-hidden="true">
 												<use xlink:href="images/sprite.svg#icon-vk"></use>
 											</svg>
 										</a>
 									</li>
 									<li class="socials__item">
-										<a class="socials__link" href="#">
-											<svg class="socials__icon" width="24" height="24">
+										<a class="link socials__link" href="#" aria-label="Перейти в YouTube">
+											<svg class="socials__icon" width="24" height="24" aria-hidden="true">
 												<use xlink:href="images/sprite.svg#icon-yt"></use>
 											</svg>
 										</a>

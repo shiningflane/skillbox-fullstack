@@ -17,7 +17,44 @@
 		line-height: 1.33;
 	}
 
+	&:hover,
+	&:focus-visible {
+		color: $color-bokara-grey;
+		background-color: $color-timberwolf;
+		outline: 1px solid $color-bokara-grey;
+		
+	}
+
+	&:active {
+		outline: none;
+	}
+
 	&--second {
 		background-color: unset;
+		color: $color-bokara-grey;
+
+		&:hover,
+		&:focus-visible {
+			background-color: unset;
+			outline: unset;
+			color: $color-pale-silver;
+		}
+
+		&:active {
+			color: $color-bokara-grey;
+			position: relative;
+
+			&::after {
+				content: "";
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				position: absolute;
+				background-color: $color-bokara-grey;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
 	}
 }

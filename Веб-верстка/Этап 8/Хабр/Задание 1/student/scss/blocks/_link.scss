@@ -12,6 +12,12 @@
 		line-height: 1.33;
 	}
 
+	&:hover,
+	&:focus-visible {
+		color: $color-quick-silver;
+		outline: none;
+	}
+
 	&--second {
 		text-decoration: underline 1px dashed;
 		text-underline-offset: 2px;

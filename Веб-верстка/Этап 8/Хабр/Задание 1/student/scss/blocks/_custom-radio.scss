@@ -4,6 +4,7 @@
 		width: 48px;
 		height: 48px;
 		position: relative;
+		cursor: pointer;
 
 		@include mvp-mobile {
 			width: 40px;
@@ -45,8 +46,16 @@
 			}
 		}
 	}
+
+	&__radio:hover ~ .custom-radio__label::after,
+	&__radio:focus-visible ~ .custom-radio__label::after {
+			display: block;
+			border: 1px solid $color-pale-silver;
+	}
+
 	&__radio:checked ~ .custom-radio__label::after {
 			display: block;
+			border: 1px solid $color-bokara-grey;
 	}
 
 	&--platinum {

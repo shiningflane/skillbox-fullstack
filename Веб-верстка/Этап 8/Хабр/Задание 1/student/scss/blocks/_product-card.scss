@@ -109,6 +109,7 @@
 		padding: 10px 15px;
 		border-radius: 60px;
 		user-select: none;
+		pointer-events: none;
 
 		@include mvp-tablet {
 			padding: 5px 10px;
@@ -235,6 +236,12 @@
 		background-color: $color-pure-grey;
 		border-radius: 8px;
 		padding: 12px;
+
+		&:hover,
+		&:focus-visible {
+			background-color: $color-pure-dark-grey;
+			outline: none;
+		}
 
 		&-logo {
 			padding: 6px;
