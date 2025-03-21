@@ -1,0 +1,161 @@
+.footer {
+	background-color: $color-hint-of-red;
+
+	&__top {
+		padding: 60px 0;
+		border: 1px solid $color-american-silver;
+
+		@include mvp-tablet {
+			padding: 40px 0;
+		}
+
+		@include mvp-mobile {
+			padding: 30px 0;
+		}
+
+		&-wrapper {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			row-gap: 40px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-grow: 1;
+		gap: 120px;
+
+		@media (max-width: 1200px) {
+			gap: 0;
+		}
+
+		@include mvp-tablet {
+			gap: 80px;
+		}
+
+		@include mvp-mobile {
+			gap: 20px;
+		}
+
+		@media (max-width: 650px) {
+			justify-content: space-between;
+		}
+	}
+
+	&__nav {
+
+		&-heading {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1.2;
+			white-space: nowrap;
+			text-transform: uppercase;
+			margin: 0 0 25px;
+			color: $color-bokara-grey;
+
+			@include mvp-tablet {
+				font-size: 18px;
+				line-height: 1.33;
+				margin: 0 0 20px;
+			}
+
+			@include mvp-mobile {
+				font-size: 16px;
+				line-height: 1.5;
+				margin: 0 0 10px;
+			}
+		}
+
+		&-list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			columns: 2 160px;
+			column-gap: 25px;
+
+			@media (max-width: 1200px) {
+				column-gap: 10px;
+			}
+
+			@include mvp-tablet {
+				columns: unset;
+			}
+		}
+
+		&-item{
+			
+			min-width: 160px;
+
+			@include mvp-mobile {
+				min-width: 150px;
+			}
+
+			&:not(:last-child) {
+				margin: 0 0 15px;
+
+				@include mvp-tablet {
+					margin: 0 0 10px;
+				}
+			}
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		@include mvp-mobile {
+			align-items: flex-start;
+		}
+	}
+
+	&__text {
+		margin: 0 0 10px;
+	}
+
+	&__link {
+		margin: 0 0 25px;
+
+		@include mvp-tablet {
+			margin: 0 0 20px;
+		}
+	}
+
+	&__bottom {
+		padding: 20px 0;
+
+		@include mvp-tablet {
+			padding: 15px 0;
+		}
+
+		&-list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 2px 25px;
+
+			@include mvp-tablet {
+				flex-direction: column;
+			}
+
+			@include mvp-mobile {
+				row-gap: 5px;
+			}
+		}
+
+		&-item {
+			font-size: 0;
+			line-height: 0;
+		}
+
+		&-link {
+			margin: 0;
+			text-align: center;
+		}
+	}
+}

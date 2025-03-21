@@ -3,18 +3,40 @@
 	font-size: 14px;
 	line-height: 1.28;
 	color: $color-bokara-grey;
-	text-decoration: underline 1px dashed;
-	text-underline-offset: 2px;
 	border: none;
 	cursor: pointer;
 	padding: 0;
 
-	@include mvp-tablet {
-		text-underline-offset: 4px;
-	}
-
 	@include mvp-mobile {
 		font-size: 12px;
 		line-height: 1.33;
+	}
+
+	&--second {
+		text-decoration: underline 1px dashed;
+		text-underline-offset: 2px;
+
+		@include mvp-tablet {
+			text-underline-offset: 4px;
+		}
+	}
+
+	&--third {
+		color: $color-chinese-black;
+		font-size: 12px;
+		line-height: 1.33;
+
+		@include mvp-mobile {
+			font-size: 10px;
+			line-height: 1.2;
+		}
+	}
+
+	&--fourth {
+
+		@include mvp-mobile {
+			font-size: 14px;
+			line-height: 1.285;
+		}
 	}
 }

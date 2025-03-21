@@ -1,0 +1,22 @@
+.socials {
+	
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		gap: 15px;
+	}
+
+	&__link {
+		display: flex;
+	}
+
+	&__icon {
+
+		@include mvp-tablet {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
