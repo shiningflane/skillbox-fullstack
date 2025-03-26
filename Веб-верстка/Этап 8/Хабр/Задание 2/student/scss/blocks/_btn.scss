@@ -1,0 +1,60 @@
+.btn {
+	cursor: pointer;
+	background-color: unset;
+	border: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&--product {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.333;
+		padding: 14px;
+		border: 1px solid $color-swiss-coffee;
+
+		@include mvp-mobile {
+			font-size: 10px;
+			line-height: 1.2;
+			padding: 12px;
+		}
+
+		&:hover {
+			background-color: $color-timberwolf;
+		}
+	}
+
+	&--icon {
+		padding: 12px 15px;
+
+		@include mvp-tablet {
+			padding: 12px 11px;
+		}
+
+		@include mvp-mobile {
+			display: none;
+		}
+
+		&:hover {
+			color: $color-moon-mist;
+		}
+	}
+
+	&--filter {
+		padding: 10px 15px;
+		color: $color-bokara-grey;
+		background-color: $color-bright-gray;
+		border-radius: 60px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.285;
+	}
+
+	&--sort {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.285;
+		gap: 4px;
+	}
+}

@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mvp-tablet {
+    padding: 0 30px;
+  }
+
+  @include mvp-mobile {
+    padding: 0 20px;
+  }
+}

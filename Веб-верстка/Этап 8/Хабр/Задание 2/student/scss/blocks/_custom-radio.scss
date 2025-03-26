@@ -1,0 +1,79 @@
+.custom-radio {
+	position: relative;
+
+	&--color-platinum .custom-radio__label::before {
+		background-color: $color-platinum;
+	}
+
+	&--color-ebony .custom-radio__label::before {
+		background-color: $color-ebony;
+	}
+
+	&--color-cadet-grey .custom-radio__label::before {
+		background-color: $color-cadet-grey;
+	}
+
+	&--color-cola .custom-radio__label::before {
+		background-color: $color-cola;
+	}
+
+	&--color-earth-yellow .custom-radio__label::before {
+		background-color: $color-earth-yellow;
+	}
+
+	&__radio:checked ~ .custom-radio__label::before {
+		border: 1px solid  #000;
+	}
+
+	&__radio:focus-visible ~ .custom-radio__label::before {
+		box-shadow: 2px 5px 5px 0px #00000033;
+	}
+
+	&__radio {
+		bottom: -10px;
+		left: 10px;
+	}
+
+	&__label {
+		padding: 10px;
+		position: relative;
+		font-size: 0;
+		cursor: pointer;
+		
+		@include mvp-tablet {
+			padding: 8px;
+		}
+
+		@include mvp-mobile {
+			padding: 6px;
+		}
+
+		&::before {
+			content: "";
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include mvp-tablet {
+				width: 16px;
+				height: 16px;
+			}
+
+			@include mvp-mobile {
+				width: 12px;
+				height: 12px;
+			}
+		}
+		
+		&:hover::before {
+			box-shadow: 2px 5px 5px 0px #00000033;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.product-card {
+
+	&__badge {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		padding: 10px 15px;
+		background-color: $color-hint-of-red;
+		position: absolute;
+		left: 15px;
+		top: 15px;
+		border-radius: 60px;
+		pointer-events: none;
+		user-select: none;
+
+		@include mvp-tablet {
+			padding: 5px 10px;
+		}
+
+		@include mvp-mobile {
+			font-size: 10px;
+			line-height: 1.2;
+			left: 10px;
+			top: 10px;
+		}
+	}
+
+	&__img {
+		margin: 0 0 20px;
+		width: 100%;
+
+		@include mvp-mobile {
+			margin: 0 0 10px;
+		}
+
+		&-link {
+			position: relative;
+			margin: 0 0 20px;
+
+			&:hover {
+
+				&::before {
+					content: "";
+					width: 100%;
+					height: 100%;
+					background-color: $color-black-40;
+					position: absolute;
+				}
+
+				&::after {
+					content: "Подробнее";
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					text-transform: uppercase;
+					font-size: 12px;
+					line-height: 1.33;
+					letter-spacing: 0.04em;
+					color: $color-white;
+
+				}
+			}
+		}
+	}
+}

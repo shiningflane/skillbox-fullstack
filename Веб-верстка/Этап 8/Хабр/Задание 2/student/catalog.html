@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Каталог товаров - Houzzy</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+          <svg class="header__logo-icon" width="110" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#logo-houzzy"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Акции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Оплата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">События</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user-list">
+          <a class="header__user-link" href="#" aria-label="Ссылка на поиск">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-search"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="#" aria-label="Ссылка на Избранное">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="#" aria-label="Ссылка на Корзину">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-bag"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="tel:88000000000" aria-label="Ссылка на телефон">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
+        </div>
+        <button class="header__burger" type="button" aria-label="Кнопка открытия мобильного меню">
+          <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="link breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="link breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="link breadcrumbs__link" href="#">Мягкая мебель</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">Кресла</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="catalogue">
+      <div class="container">
+        <div class="catalogue__top">
+          <h1 class="catalogue__heading">Кресла</h1>
+          <nav class="catalogue-nav catalogue__nav">
+            <ul class="catalogue-nav__filters-list">
+              <li class="catalogue-nav__filters-item">
+                <button class="btn btn--filter catalogue-nav__filters-btn">Кресла в&nbsp;мягкой обивке</button>
+              </li>
+              <li class="catalogue-nav__filters-item">
+                <button class="btn btn--filter catalogue-nav__filters-btn">Дизайнерские кресла</button>
+              </li>
+              <li class="catalogue-nav__filters-item">
+                <button class="btn btn--filter catalogue-nav__filters-btn">Кресла без спинки</button>
+              </li>
+            </ul>
+            <div class="catalogue-nav__sort">
+              <div class="catalogue-nav__sort-wrapper">
+                <span class="catalogue-nav__sort-text">Сортировать:</span>
+                <ul class="catalogue-nav__sort-list">
+                  <li class="catalogue-nav__sort-item">
+                    <button
+                      class="btn btn--sort catalogue-nav__sort-btn catalogue-nav__sort-btn--active">Популярные</button>
+                  </li>
+                  <li class="catalogue-nav__sort-item">
+                    <button class="btn btn--sort catalogue-nav__sort-btn">
+                      По возрастанию цены
+                      <svg class="catalogue-nav__sort-logo" width="16" height="16">
+                        <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="catalogue-nav__sort-item">
+                    <button class="btn btn--sort catalogue-nav__sort-btn">
+                      По убыванию цены
+                      <svg class="catalogue-nav__sort-logo catalogue-nav__sort-logo--reverse" width="16" height="16">
+                        <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn btn--sort catalogue-nav__sort-btn catalogue-nav__sort-btn--second">
+                <svg class="catalogue-nav__sort-icon" width="24" height="24">
+                  <use xlink:href="images/sprite.svg#icon-filter"></use>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <ul class="catalogue__products-list">
+          <!-- Карточка 1 -->
+          <li class="catalogue__products-item">
+            <div class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="images/image-1.jpg" srcset="images/image-1@2x.jpg 2x" alt="Фотография товара">
+                <span class="product-card__badge">-20%</span>
+              </a>
+              <form class="product-form">
+                <div class="product-form__top-wrapper">
+                  <a class="product-form__loan-link" href="#">
+                    <svg class="product-form__loan-icon" width="68" height="20">
+                      <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
+                    </svg>
+                  </a>
+                  <div class="product-form__radios">
+                    <div class="custom-radio custom-radio--color-platinum">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="nort-cozy-color" value="platinum"
+                        id="nort-cozy-color-platinum" required>
+                      <label class="custom-radio__label" for="nort-cozy-color-platinum"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-ebony">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="nort-cozy-color" value="ebony"
+                        id="nort-cozy-color-ebony" required>
+                      <label class="custom-radio__label" for="nort-cozy-color-ebony"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-cadet-grey">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="nort-cozy-color" value="cadet-grey"
+                        id="nort-cozy-color-cadet-grey" required>
+                      <label class="custom-radio__label" for="nort-cozy-color-cadet-grey"></label>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-form__category">мягкая мебель</span>
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Кресло nort cozy</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">4&nbsp;480&nbsp;руб.</span>
+                  <span class="product-form__price product-form__price--old">5&nbsp;600&nbsp;руб.</span>
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon" type="button">
+                    <svg class="product-form__btn-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 2 -->
+          <li class="catalogue__products-item">
+            <div class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="images/image-2.jpg" srcset="images/image-2@2x.jpg 2x" alt="Фотография товара">
+                <span class="product-card__badge">-20%</span>
+              </a>
+              <form class="product-form">
+                <div class="product-form__top-wrapper">
+                  <a class="product-form__loan-link" href="#">
+                    <svg class="product-form__loan-icon" width="68" height="20">
+                      <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
+                    </svg>
+                  </a>
+                  <div class="product-form__radios">
+                    <div class="custom-radio custom-radio--color-ebony">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="pikont-color" value="ebony"
+                        id="pikont-color-ebony" required>
+                      <label class="custom-radio__label" for="pikont-color-ebony"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-cola">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="pikont-color" value="cola"
+                        id="pikont-color-cola" required>
+                      <label class="custom-radio__label" for="pikont-color-cola"></label>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-form__category">мягкая мебель</span>
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Кресло pikont</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">5&nbsp;360&nbsp;руб.</span>
+                  <span class="product-form__price product-form__price--old">7&nbsp;600&nbsp;руб.</span>
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon" type="button">
+                    <svg class="product-form__btn-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 3 -->
+          <li class="catalogue__products-item">
+            <div class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="images/image-3.jpg" srcset="images/image-3@2x.jpg 2x" alt="Фотография товара">
+                <!-- <span class="product-card__badge">-20%</span> -->
+              </a>
+              <form class="product-form">
+                <div class="product-form__top-wrapper">
+                  <a class="product-form__loan-link" href="#">
+                    <svg class="product-form__loan-icon" width="68" height="20">
+                      <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
+                    </svg>
+                  </a>
+                  <div class="product-form__radios">
+                    <div class="custom-radio custom-radio--color-platinum">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="heavy-suite-color" value="platinum"
+                        id="heavy-suite-color-platinum" required>
+                      <label class="custom-radio__label" for="heavy-suite-color-platinum"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-cola">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="heavy-suite-color" value="cola"
+                        id="heavy-suite-color-cola" required>
+                      <label class="custom-radio__label" for="heavy-suite-color-cola"></label>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-form__category">мягкая мебель</span>
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Кресло heavy suite</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">9&nbsp;200&nbsp;руб.</span>
+                  <!-- <span class="product-form__price product-form__price--old">5&nbsp;600&nbsp;руб.</span> -->
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon" type="button">
+                    <svg class="product-form__btn-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 4 -->
+          <li class="catalogue__products-item">
+            <div class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="images/image-4.jpg" srcset="images/image-4@2x.jpg 2x" alt="Фотография товара">
+                <span class="product-card__badge">-20%</span>
+              </a>
+              <form class="product-form">
+                <div class="product-form__top-wrapper">
+                  <a class="product-form__loan-link" href="#">
+                    <svg class="product-form__loan-icon" width="68" height="20">
+                      <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
+                    </svg>
+                  </a>
+                  <div class="product-form__radios">
+                    <div class="custom-radio custom-radio--color-platinum">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="sea-breeze-color" value="platinum"
+                        id="sea-breeze-color-platinum" required>
+                      <label class="custom-radio__label" for="sea-breeze-color-platinum"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-earth-yellow">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="sea-breeze-color" value="earth-yellow"
+                        id="sea-breeze-color-earth-yellow" required>
+                      <label class="custom-radio__label" for="sea-breeze-color-earth-yellow"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-cola">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="sea-breeze-color" value="cola"
+                        id="sea-breeze-color-cola" required>
+                      <label class="custom-radio__label" for="sea-breeze-color-cola"></label>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-form__category">мягкая мебель</span>
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Кресло sea breeze</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">3&nbsp;360&nbsp;руб.</span>
+                  <span class="product-form__price product-form__price--old">4&nbsp;200&nbsp;руб.</span>
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon" type="button">
+                    <svg class="product-form__btn-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 5 -->
+          <li class="catalogue__products-item">
+            <div class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="images/image-5.jpg" srcset="images/image-5@2x.jpg 2x" alt="Фотография товара">
+                <span class="product-card__badge">-20%</span>
+              </a>
+              <form class="product-form">
+                <div class="product-form__top-wrapper">
+                  <a class="product-form__loan-link" href="#">
+                    <svg class="product-form__loan-icon" width="68" height="20">
+                      <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
+                    </svg>
+                  </a>
+                  <div class="product-form__radios">
+                    <div class="custom-radio custom-radio--color-ebony">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="mafiafamily-color" value="ebony"
+                        id="mafiafamily-color-ebony" required>
+                      <label class="custom-radio__label" for="mafiafamily-color-ebony"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-cola">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="mafiafamily-color" value="cola"
+                        id="mafiafamily-color-cola" required>
+                      <label class="custom-radio__label" for="mafiafamily-color-cola"></label>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-form__category">мягкая мебель</span>
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Кресло mafiafamily</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">9&nbsp;960&nbsp;руб.</span>
+                  <span class="product-form__price product-form__price--old">12&nbsp;450&nbsp;руб.</span>
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon" type="button">
+                    <svg class="product-form__btn-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 6 -->
+          <li class="catalogue__products-item">
+            <div class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="images/image-6.jpg" srcset="images/image-6@2x.jpg 2x" alt="Фотография товара">
+                <!-- <span class="product-card__badge">-20%</span> -->
+              </a>
+              <form class="product-form">
+                <div class="product-form__top-wrapper">
+                  <a class="product-form__loan-link" href="#">
+                    <svg class="product-form__loan-icon" width="68" height="20">
+                      <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
+                    </svg>
+                  </a>
+                  <div class="product-form__radios">
+                    <div class="custom-radio custom-radio--color-cadet-grey">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="noilfo-color" value="cadet-grey"
+                        id="noilfo-color-cadet-grey" required>
+                      <label class="custom-radio__label" for="noilfo-color-cadet-grey"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-cola">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="noilfo-color" value="cola"
+                        id="noilfo-color-cola" required>
+                      <label class="custom-radio__label" for="noilfo-color-cola"></label>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-form__category">мягкая мебель</span>
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Кресло noilfo</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">7&nbsp;860&nbsp;руб.</span>
+                  <!-- <span class="product-form__price product-form__price--old">5&nbsp;600&nbsp;руб.</span> -->
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon" type="button">
+                    <svg class="product-form__btn-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 7 -->
+          <li class="catalogue__products-item">
+            <div class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="images/image-7.jpg" srcset="images/image-7@2x.jpg 2x" alt="Фотография товара">
+                <!-- <span class="product-card__badge">-20%</span> -->
+              </a>
+              <form class="product-form">
+                <div class="product-form__top-wrapper">
+                  <a class="product-form__loan-link" href="#">
+                    <svg class="product-form__loan-icon" width="68" height="20">
+                      <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
+                    </svg>
+                  </a>
+                  <div class="product-form__radios">
+                    <div class="custom-radio custom-radio--color-earth-yellow">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="sunbot-color" value="earth-yellow"
+                        id="sunbot-color-earth-yellow" required>
+                      <label class="custom-radio__label" for="sunbot-color-earth-yellow"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-cola">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="sunbot-color" value="cola"
+                        id="sunbot-color-cola" required>
+                      <label class="custom-radio__label" for="sunbot-color-cola"></label>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-form__category">мягкая мебель</span>
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Кресло sunbot</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">3&nbsp;880&nbsp;руб.</span>
+                  <!-- <span class="product-form__price product-form__price--old">5&nbsp;600&nbsp;руб.</span> -->
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon" type="button">
+                    <svg class="product-form__btn-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 8 -->
+          <li class="catalogue__products-item">
+            <div class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="images/image-8.jpg" srcset="images/image-8@2x.jpg 2x" alt="Фотография товара">
+                <span class="product-card__badge">-20%</span>
+              </a>
+              <form class="product-form">
+                <div class="product-form__top-wrapper">
+                  <a class="product-form__loan-link" href="#">
+                    <svg class="product-form__loan-icon" width="68" height="20">
+                      <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
+                    </svg>
+                  </a>
+                  <div class="product-form__radios">
+                    <div class="custom-radio custom-radio--color-cadet-grey">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="dromsa-color" value="cadet-grey"
+                        id="dromsa-color-cadet-grey" required>
+                      <label class="custom-radio__label" for="dromsa-color-cadet-grey"></label>
+                    </div>
+                    <div class="custom-radio custom-radio--color-earth-yellow">
+                      <input class="custom-radio__radio visually-hidden" type="radio" name="dromsa-color" value="earth-yellow"
+                        id="dromsa-color-earth-yellow" required>
+                      <label class="custom-radio__label" for="dromsa-color-earth-yellow"></label>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-form__category">мягкая мебель</span>
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Кресло dromsa</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">7&nbsp;120&nbsp;руб.</span>
+                  <span class="product-form__price product-form__price--old">8&nbsp;900&nbsp;руб.</span>
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon" type="button">
+                    <svg class="product-form__btn-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content-block">
+        <div class="footer__nav-block">
+          <div class="footer__nav">
+            <p class="footer__title">Покупателям</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Как сделать заказ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Доставка</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Оплата</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Каталог</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Коллекции</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Отзывы </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav">
+            <p class="footer__title">О houzzy</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">О компании</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Сотрудничество</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">События</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Контакты</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Реквизиты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__title">Контактная информация</p>
+          <div class="footer__address">
+            <span class="footer__text">г. Красноярск, ул. Декабристов 19а</span>
+            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+          </div>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на Whatsapp">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-wa"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на Телеграм">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на ВК">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на YouTube">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-yt"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal-block">
+        <div class="footer__legal-inner">
+          <a class="footer__legal-link" href="#">Пользовательское соглашение и&nbsp;условия</a>
+          <p class="footer__legal-text">&copy;&nbsp;Houzzy, 2024. Информация на&nbsp;сайте не&nbsp;является офертой
+            и&nbsp;носит информационный характер</p>
+          <a class="footer__legal-link" href="#">Обработка персональных данных</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
