@@ -1,0 +1,54 @@
+.e-mail {
+	margin: 0 0 120px;
+
+	@include mvp-tablet {
+		margin: 0 0 60px;
+	}
+
+	@include mvp-mobile {
+		margin: 0 0 50px;
+	}
+	
+	&__wrapper {
+		padding: 48px 80px;
+		background-color: $color-timberwolf;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 60px;
+
+		@include mvp-tablet {
+			padding: 30px 40px;
+			flex-direction: column;
+			align-items: stretch;
+			gap: 25px;
+		}
+
+		@include mvp-mobile {
+			padding: 20px 30px;
+			gap: 20px;
+		}
+	}
+
+	&__heading {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 1.167;
+		color: $color-axolotl;
+		max-width: 400px;
+		margin: 0;
+
+		@include mvp-tablet {
+			font-size: 16px;
+			line-height: 1.5;
+			max-width: unset;
+			text-align: center;
+		}
+
+		@include mvp-mobile {
+			font-size: 14px;
+			line-height: 1.43;
+			text-align: left;
+		}
+	}
+}

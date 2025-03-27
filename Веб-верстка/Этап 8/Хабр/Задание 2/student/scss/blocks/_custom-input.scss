@@ -1,0 +1,51 @@
+.custom-input {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	
+
+	&__e-mail {
+		background-color: unset;
+		border: none;
+		border-bottom: 1px solid $color-grullo;
+		font-size: 16px;
+		line-height: 1.375;
+		padding: 0 0 9px;
+		outline: none;
+
+		@include mvp-mobile {
+			font-size: 14px;
+			line-height: 1.285;
+		}
+
+		&::placeholder {
+			color: $color-bokara-grey;
+		}
+
+		&:hover,
+		&:focus-visible {
+			border-color: $color-moon-mist;
+
+			&::placeholder {
+				color: $color-cloudy;
+			}
+		}
+	}
+
+	&--error {
+
+		.custom-input__e-mail {
+			border-color: $color-crimson;
+		}
+
+		.custom-input__error {
+			display: flex;
+		}
+	}
+
+	&__error {
+		display: none;
+		color: $color-crimson;
+	}
+}

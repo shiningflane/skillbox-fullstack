@@ -1,0 +1,44 @@
+.e-mail-form {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-grow: 1;
+	gap: 60px;
+
+	@include mvp-tablet {
+		justify-content: center;
+		gap: 48px;
+	}
+
+	@include mvp-mobile {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__input-wrapper {
+		max-width: 340px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		flex-shrink: 2;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.33;
+		color: $color-grullo;
+		margin: 0;
+
+		@include mvp-mobile {
+			font-size: 10px;
+			line-height: 1.2;
+		}
+	}
+
+	&__btn {
+		flex-shrink: 1;
+	}
+}

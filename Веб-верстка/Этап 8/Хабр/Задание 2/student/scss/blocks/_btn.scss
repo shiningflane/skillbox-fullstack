@@ -57,4 +57,22 @@
 		line-height: 1.285;
 		gap: 4px;
 	}
+
+	&--form {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.285;
+		color: $color-white;
+		padding: 21px;
+		background-color: $color-bokara-grey;
+		max-width: 240px;
+		width: 100%;
+
+		@include mvp-mobile {
+			font-size: 12px;
+			line-height: 1.33;
+			padding: 18px;
+			max-width: 260px;
+		}
+	}
 }
