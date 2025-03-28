@@ -112,13 +112,13 @@
                 <span class="catalogue-nav__sort-text">Сортировать:</span>
                 <ul class="catalogue-nav__sort-list">
                   <li class="catalogue-nav__sort-item">
-                    <button
-                      class="btn btn--sort catalogue-nav__sort-btn catalogue-nav__sort-btn--active">Популярные</button>
+                    <!-- Для отображения активной кнопки сортировки применяется класс catalogue-nav__sort-btn--active -->
+                    <button class="btn btn--sort catalogue-nav__sort-btn catalogue-nav__sort-btn--active">Популярные</button>
                   </li>
                   <li class="catalogue-nav__sort-item">
                     <button class="btn btn--sort catalogue-nav__sort-btn">
                       По возрастанию цены
-                      <svg class="catalogue-nav__sort-logo" width="16" height="16">
+                      <svg class="catalogue-nav__sort-logo" width="16" height="16" aria-hidden="true">
                         <use xlink:href="images/sprite.svg#icon-arrow"></use>
                       </svg>
                     </button>
@@ -126,15 +126,15 @@
                   <li class="catalogue-nav__sort-item">
                     <button class="btn btn--sort catalogue-nav__sort-btn">
                       По убыванию цены
-                      <svg class="catalogue-nav__sort-logo catalogue-nav__sort-logo--reverse" width="16" height="16">
+                      <svg class="catalogue-nav__sort-logo catalogue-nav__sort-logo--reverse" width="16" height="16" aria-hidden="true">
                         <use xlink:href="images/sprite.svg#icon-arrow"></use>
                       </svg>
                     </button>
                   </li>
                 </ul>
               </div>
-              <button class="btn btn--sort catalogue-nav__sort-btn catalogue-nav__sort-btn--second">
-                <svg class="catalogue-nav__sort-icon" width="24" height="24">
+              <button class="btn btn--sort catalogue-nav__sort-btn catalogue-nav__sort-btn--second" aria-label="Открыть меню сортировки">
+                <svg class="catalogue-nav__sort-icon" width="24" height="24" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#icon-filter"></use>
                 </svg>
               </button>
@@ -149,10 +149,10 @@
                 <img class="product-card__img" src="images/image-1.jpg" srcset="images/image-1@2x.jpg 2x" alt="Фотография товара">
                 <span class="product-card__badge">-20%</span>
               </a>
-              <form class="product-form">
+              <form class="product-form" action="#" method="post">
                 <div class="product-form__top-wrapper">
-                  <a class="product-form__loan-link" href="#">
-                    <svg class="product-form__loan-icon" width="68" height="20">
+                  <a class="product-form__loan-link" href="#" aria-label="Купить товар долями">
+                    <svg class="product-form__loan-icon" width="68" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
                     </svg>
                   </a>
@@ -182,8 +182,8 @@
                 </div>
                 <div class="product-form__buttons">
                   <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
-                  <button class="btn btn--icon" type="button">
-                    <svg class="product-form__btn-icon" width="20" height="20">
+                  <button class="btn btn--icon" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-heart"></use>
                     </svg>
                   </button>
@@ -198,10 +198,10 @@
                 <img class="product-card__img" src="images/image-2.jpg" srcset="images/image-2@2x.jpg 2x" alt="Фотография товара">
                 <span class="product-card__badge">-20%</span>
               </a>
-              <form class="product-form">
+              <form class="product-form" action="#" method="post">
                 <div class="product-form__top-wrapper">
-                  <a class="product-form__loan-link" href="#">
-                    <svg class="product-form__loan-icon" width="68" height="20">
+                  <a class="product-form__loan-link" href="#" aria-label="Купить товар долями">
+                    <svg class="product-form__loan-icon" width="68" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
                     </svg>
                   </a>
@@ -226,8 +226,8 @@
                 </div>
                 <div class="product-form__buttons">
                   <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
-                  <button class="btn btn--icon" type="button">
-                    <svg class="product-form__btn-icon" width="20" height="20">
+                  <button class="btn btn--icon" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-heart"></use>
                     </svg>
                   </button>
@@ -242,10 +242,10 @@
                 <img class="product-card__img" src="images/image-3.jpg" srcset="images/image-3@2x.jpg 2x" alt="Фотография товара">
                 <!-- <span class="product-card__badge">-20%</span> -->
               </a>
-              <form class="product-form">
+              <form class="product-form" action="#" method="post">
                 <div class="product-form__top-wrapper">
-                  <a class="product-form__loan-link" href="#">
-                    <svg class="product-form__loan-icon" width="68" height="20">
+                  <a class="product-form__loan-link" href="#" aria-label="Купить товар долями">
+                    <svg class="product-form__loan-icon" width="68" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
                     </svg>
                   </a>
@@ -270,8 +270,8 @@
                 </div>
                 <div class="product-form__buttons">
                   <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
-                  <button class="btn btn--icon" type="button">
-                    <svg class="product-form__btn-icon" width="20" height="20">
+                  <button class="btn btn--icon" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-heart"></use>
                     </svg>
                   </button>
@@ -286,10 +286,10 @@
                 <img class="product-card__img" src="images/image-4.jpg" srcset="images/image-4@2x.jpg 2x" alt="Фотография товара">
                 <span class="product-card__badge">-20%</span>
               </a>
-              <form class="product-form">
+              <form class="product-form" action="#" method="post">
                 <div class="product-form__top-wrapper">
-                  <a class="product-form__loan-link" href="#">
-                    <svg class="product-form__loan-icon" width="68" height="20">
+                  <a class="product-form__loan-link" href="#" aria-label="Купить товар долями">
+                    <svg class="product-form__loan-icon" width="68" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
                     </svg>
                   </a>
@@ -319,8 +319,8 @@
                 </div>
                 <div class="product-form__buttons">
                   <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
-                  <button class="btn btn--icon" type="button">
-                    <svg class="product-form__btn-icon" width="20" height="20">
+                  <button class="btn btn--icon" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-heart"></use>
                     </svg>
                   </button>
@@ -335,10 +335,10 @@
                 <img class="product-card__img" src="images/image-5.jpg" srcset="images/image-5@2x.jpg 2x" alt="Фотография товара">
                 <span class="product-card__badge">-20%</span>
               </a>
-              <form class="product-form">
+              <form class="product-form" action="#" method="post">
                 <div class="product-form__top-wrapper">
-                  <a class="product-form__loan-link" href="#">
-                    <svg class="product-form__loan-icon" width="68" height="20">
+                  <a class="product-form__loan-link" href="#" aria-label="Купить товар долями">
+                    <svg class="product-form__loan-icon" width="68" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
                     </svg>
                   </a>
@@ -363,8 +363,8 @@
                 </div>
                 <div class="product-form__buttons">
                   <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
-                  <button class="btn btn--icon" type="button">
-                    <svg class="product-form__btn-icon" width="20" height="20">
+                  <button class="btn btn--icon" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-heart"></use>
                     </svg>
                   </button>
@@ -379,10 +379,10 @@
                 <img class="product-card__img" src="images/image-6.jpg" srcset="images/image-6@2x.jpg 2x" alt="Фотография товара">
                 <!-- <span class="product-card__badge">-20%</span> -->
               </a>
-              <form class="product-form">
+              <form class="product-form" action="#" method="post">
                 <div class="product-form__top-wrapper">
-                  <a class="product-form__loan-link" href="#">
-                    <svg class="product-form__loan-icon" width="68" height="20">
+                  <a class="product-form__loan-link" href="#" aria-label="Купить товар долями">
+                    <svg class="product-form__loan-icon" width="68" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
                     </svg>
                   </a>
@@ -407,8 +407,8 @@
                 </div>
                 <div class="product-form__buttons">
                   <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
-                  <button class="btn btn--icon" type="button">
-                    <svg class="product-form__btn-icon" width="20" height="20">
+                  <button class="btn btn--icon" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-heart"></use>
                     </svg>
                   </button>
@@ -423,10 +423,10 @@
                 <img class="product-card__img" src="images/image-7.jpg" srcset="images/image-7@2x.jpg 2x" alt="Фотография товара">
                 <!-- <span class="product-card__badge">-20%</span> -->
               </a>
-              <form class="product-form">
+              <form class="product-form" action="#" method="post">
                 <div class="product-form__top-wrapper">
-                  <a class="product-form__loan-link" href="#">
-                    <svg class="product-form__loan-icon" width="68" height="20">
+                  <a class="product-form__loan-link" href="#" aria-label="Купить товар долями">
+                    <svg class="product-form__loan-icon" width="68" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
                     </svg>
                   </a>
@@ -451,8 +451,8 @@
                 </div>
                 <div class="product-form__buttons">
                   <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
-                  <button class="btn btn--icon" type="button">
-                    <svg class="product-form__btn-icon" width="20" height="20">
+                  <button class="btn btn--icon" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-heart"></use>
                     </svg>
                   </button>
@@ -467,10 +467,10 @@
                 <img class="product-card__img" src="images/image-8.jpg" srcset="images/image-8@2x.jpg 2x" alt="Фотография товара">
                 <span class="product-card__badge">-20%</span>
               </a>
-              <form class="product-form">
+              <form class="product-form" action="#" method="post">
                 <div class="product-form__top-wrapper">
-                  <a class="product-form__loan-link" href="#">
-                    <svg class="product-form__loan-icon" width="68" height="20">
+                  <a class="product-form__loan-link" href="#" aria-label="Купить товар долями">
+                    <svg class="product-form__loan-icon" width="68" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-dolyami"></use> 
                     </svg>
                   </a>
@@ -495,8 +495,8 @@
                 </div>
                 <div class="product-form__buttons">
                   <button class="btn btn--product product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
-                  <button class="btn btn--icon" type="button">
-                    <svg class="product-form__btn-icon" width="20" height="20">
+                  <button class="btn btn--icon" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-heart"></use>
                     </svg>
                   </button>
@@ -523,6 +523,181 @@
             <button class="btn btn--form e-mail-form__btn" type="submit">Подписаться</button>
           </form>
         </div>
+      </div>
+    </section>
+    <section class="recent">
+      <div class="container">
+        <h3 class="recent__heading">Недавно просмотренное</h3>
+        <ul class="recent__list">
+          <!-- Карточка 1 -->
+          <li class="recent__item">
+            <div class="product-card product-card--recent">
+              <a class="product-card__img-link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="images/image-recently-1-mobile.jpg 1x, images/image-recently-1-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="images/image-recently-1-tablet.jpg 1x, images/image-recently-1-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="images/image-recently-1.jpg" srcset="images/image-recently-1@2x.jpg 2x" alt="Фотография товара">
+                </picture>
+                <span class="product-card__badge">-20%</span>
+              </a>
+              <form class="product-form product-form--recent" action="#" method="post">
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Стул Mandarin</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">9&nbsp;960&nbsp;руб.</span>
+                  <span class="product-form__price product-form__price--old">12&nbsp;450&nbsp;руб.</span>
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product btn--product-small product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon btn--icon-small" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 2 -->
+          <li class="recent__item">
+            <div class="product-card product-card--recent">
+              <a class="product-card__img-link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="images/image-recently-2-mobile.jpg 1x, images/image-recently-2-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="images/image-recently-2-tablet.jpg 1x, images/image-recently-2-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="images/image-recently-2.jpg" srcset="images/image-recently-2@2x.jpg 2x" alt="Фотография товара">
+                </picture>
+                <!-- <span class="product-card__badge">-20%</span> -->
+              </a>
+              <form class="product-form product-form--recent" action="#" method="post">
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Торшер Womromo</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">2&nbsp;450&nbsp;руб.</span>
+                  <!-- <span class="product-form__price product-form__price--old">12&nbsp;450&nbsp;руб.</span> -->
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product btn--product-small product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon btn--icon-small" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 3 -->
+          <li class="recent__item">
+            <div class="product-card product-card--recent">
+              <a class="product-card__img-link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="images/image-recently-3-mobile.jpg 1x, images/image-recently-3-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="images/image-recently-3-tablet.jpg 1x, images/image-recently-3-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="images/image-recently-3.jpg" srcset="images/image-recently-3@2x.jpg 2x" alt="Фотография товара">
+                </picture>
+                <!-- <span class="product-card__badge">-20%</span> -->
+              </a>
+              <form class="product-form product-form--recent" action="#" method="post">
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Стул Olimpia</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">4&nbsp;890&nbsp;руб.</span>
+                  <!-- <span class="product-form__price product-form__price--old">12&nbsp;450&nbsp;руб.</span> -->
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product btn--product-small product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon btn--icon-small" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 4 -->
+          <li class="recent__item">
+            <div class="product-card product-card--recent">
+              <a class="product-card__img-link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="images/image-recently-4-mobile.jpg 1x, images/image-recently-4-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="images/image-recently-4-tablet.jpg 1x, images/image-recently-4-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="images/image-recently-4.jpg" srcset="images/image-recently-4@2x.jpg 2x" alt="Фотография товара">
+                </picture>
+                <!-- <span class="product-card__badge">-20%</span> -->
+              </a>
+              <form class="product-form product-form--recent" action="#" method="post">
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Стеклянная ваза Turefa</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">2&nbsp;368&nbsp;руб.</span>
+                  <!-- <span class="product-form__price product-form__price--old">12&nbsp;450&nbsp;руб.</span> -->
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product btn--product-small product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon btn--icon-small" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 5 -->
+          <li class="recent__item">
+            <div class="product-card product-card--recent">
+              <a class="product-card__img-link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="images/image-recently-5-mobile.jpg 1x, images/image-recently-5-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="images/image-recently-5-tablet.jpg 1x, images/image-recently-5-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="images/image-recently-5.jpg" srcset="images/image-recently-5@2x.jpg 2x" alt="Фотография товара">
+                </picture>
+                <span class="product-card__badge">-20%</span>
+              </a>
+              <form class="product-form product-form--recent" action="#" method="post">
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Стол Agnesia</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">7&nbsp;120&nbsp;руб.</span>
+                  <span class="product-form__price product-form__price--old">8&nbsp;900&nbsp;руб.</span>
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product btn--product-small product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon btn--icon-small" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Карточка 6 -->
+          <li class="recent__item">
+            <div class="product-card product-card--recent">
+              <a class="product-card__img-link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="images/image-recently-6-mobile.jpg 1x, images/image-recently-6-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="images/image-recently-6-tablet.jpg 1x, images/image-recently-6-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="images/image-recently-6.jpg" srcset="images/image-recently-6@2x.jpg 2x" alt="Фотография товара">
+                </picture>
+                <!-- <span class="product-card__badge">-20%</span> -->
+              </a>
+              <form class="product-form product-form--recent" action="#" method="post">
+                <a class="product-form__heading-link"><h2 class="product-form__heading">Ваза керамика Agisa</h2></a>
+                <div class="product-form__prices">
+                  <span class="product-form__price">1&nbsp;800&nbsp;руб.</span>
+                  <!-- <span class="product-form__price product-form__price--old">12&nbsp;450&nbsp;руб.</span> -->
+                </div>
+                <div class="product-form__buttons">
+                  <button class="btn btn--product btn--product-small product-form__btn" type="submit">Добавить в&nbsp;корзину</button>
+                  <button class="btn btn--icon btn--icon-small" type="button" aria-label="Добавить товар в избранное">
+                    <svg class="product-form__btn-icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

@@ -11,16 +11,29 @@
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 1.333;
-		padding: 14px;
+		padding: 13px;
 		border: 1px solid $color-swiss-coffee;
 
 		@include mvp-mobile {
 			font-size: 10px;
 			line-height: 1.2;
-			padding: 12px;
+			padding: 11px;
 		}
 
-		&:hover {
+		&-small {
+			
+			@include mvp-tablet {
+				padding: 11px 9px;
+			}
+
+			@include mvp-mobile {
+				padding: 5px 9px;
+			}
+		}
+
+		&:hover,
+		&:focus-visible {
+			outline: none;
 			background-color: $color-timberwolf;
 		}
 	}
@@ -36,7 +49,17 @@
 			display: none;
 		}
 
-		&:hover {
+		&-small {
+			padding: 12px 10px;
+
+			@include mvp-tablet {
+				padding: 12px 4px;
+			}
+		}
+
+		&:hover,
+		&:focus-visible {
+			outline: none;
 			color: $color-moon-mist;
 		}
 	}
@@ -49,6 +72,12 @@
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 1.285;
+
+		&:hover,
+		&:focus-visible {
+			background-color: $color-timberwolf;
+			outline: none;
+		}
 	}
 
 	&--sort {
@@ -56,6 +85,13 @@
 		font-size: 14px;
 		line-height: 1.285;
 		gap: 4px;
+
+		&:hover,
+		&:focus-visible,
+		&:active {
+			outline: none;
+			color: $color-cloudy;
+		}
 	}
 
 	&--form {
@@ -73,6 +109,14 @@
 			line-height: 1.33;
 			padding: 18px;
 			max-width: 260px;
+		}
+
+		&:hover,
+		&:focus-visible {
+			color: $color-bokara-grey;
+			outline: none;
+			border: 1px solid $color-bokara-grey;
+			background-color: $color-timberwolf;
 		}
 	}
 }

@@ -1,4 +1,8 @@
 .product-card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	$root: &;
 
 	&__badge {
 		font-weight: 500;
@@ -28,18 +32,21 @@
 	}
 
 	&__img {
-		margin: 0 0 20px;
+		// margin: 0 0 20px;
 		width: 100%;
 
-		@include mvp-mobile {
-			margin: 0 0 10px;
-		}
-
 		&-link {
+			display: block;
 			position: relative;
 			margin: 0 0 20px;
 
-			&:hover {
+			@include mvp-mobile {
+				margin: 0 0 10px;
+			}
+
+			&:hover,
+			&:focus-visible {
+				outline: none;
 
 				&::before {
 					content: "";
@@ -63,6 +70,24 @@
 
 				}
 			}
+		}
+	}
+
+	&--recent {
+
+		#{$root} {
+			
+			&__img {
+
+				&-link {
+					margin: 0 0 15px;
+
+					@include mvp-mobile {
+						margin: 0 0 5px;
+					}
+				}
+			}
+
 		}
 	}
 }

@@ -1,4 +1,8 @@
 .product-form {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	$root: &;
 
 	&__top-wrapper {
 		display: flex;
@@ -11,8 +15,13 @@
 
 		&-link {
 
-			&:hover .product-form__loan-icon {
-				background-color: $color-black-coffee;
+			&:hover,
+			&:focus-visible {
+				outline: none;
+
+				& .product-form__loan-icon {
+					background-color: $color-black-coffee;
+				}
 			}
 		}
 
@@ -140,6 +149,7 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 10px;
+		margin-top: auto;
 
 		@include mvp-tablet {
 			gap: 4px;
@@ -148,5 +158,79 @@
 
 	&__btn {
 		flex-grow: 1;
+	}
+
+	&--recent {
+
+		#{$root} {
+
+			&__heading {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 1.5;
+				text-transform: unset;
+				margin: 0 0 5px;
+
+				@include mvp-tablet {
+					font-size: 14px;
+					line-height: 1.285;
+				}
+
+				@include mvp-mobile {
+					font-size: 12px;
+					line-height: 1.33;
+				}
+			}
+
+			&__prices {
+				gap: 5px;
+				margin: 0 0 15px;
+
+				@include mvp-mobile {
+					gap: unset;
+					flex-direction: column;
+					align-items: flex-start;
+					margin: 0 0 12px;
+				}
+			}
+
+			&__price {
+				font-size: 14px;
+				line-height: 1.285;
+
+				@include mvp-tablet {
+					font-size: 12px;
+					line-height: 1.33;
+				}
+
+				&--old {
+					font-size: 12px;
+					line-height: 1.33;
+
+					@include mvp-tablet {
+						font-size: 10px;
+						line-height: 1.4;
+					}
+				}
+			}
+
+			&__buttons {
+
+				@include mvp-tablet {
+					gap: 6px;
+				}
+			}
+
+			&__btn {
+
+				&-icon {
+
+					@include mvp-tablet {
+						width: 16px;
+						height: 16px;
+					}
+				}
+			}
+		}
 	}
 }

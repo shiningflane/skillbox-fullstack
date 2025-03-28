@@ -1,0 +1,51 @@
+.recent {
+	margin: 0 0 120px;
+
+	@include mvp-tablet {
+		margin: 0 0 60px;
+	}
+
+	@include mvp-mobile {
+		margin: 0 0 50px;
+	}
+
+	&__heading {
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 1.167;
+		letter-spacing: -0.04em;
+		color: $color-bokara-grey;
+		margin: 0 0 40px;
+
+		@include mvp-tablet {
+			font-size: 36px;
+			line-height: 1.11;
+			margin: 0 0 30px;
+		}
+
+		@include mvp-mobile {
+			font-size: 26px;
+			line-height: 1.23;
+			margin: 0 0 20px;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 16px;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+		@include mvp-tablet {
+			gap: 30px 9px;
+			grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+		}
+
+		@include mvp-mobile {
+			gap: 20px 10px;
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		}
+	}
+}

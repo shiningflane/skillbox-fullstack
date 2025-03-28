@@ -59,12 +59,12 @@
 			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 			@include mvp-tablet {
-				gap: 38px 30px;
+				gap: 40px 30px;
 				grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
 			}
 
 			@include mvp-mobile {
-				gap: 18px 10px;
+				gap: 20px 10px;
 				grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
 			}
 		}
