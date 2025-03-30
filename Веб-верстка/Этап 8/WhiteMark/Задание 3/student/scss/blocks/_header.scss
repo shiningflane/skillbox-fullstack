@@ -1,0 +1,173 @@
+.header {
+  $root: &;
+  padding: 20px 0 19px;
+  border-bottom: 1px solid $color-gainsboro;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: $color-white;
+  z-index: 10;
+  margin: 0 0 40px;
+
+  @include mvp-tablet {
+    padding: 17px 0 16px;
+  }
+
+  .container {
+    max-width: 1728px;
+    padding: 0 50px;
+
+    @include mvp-tablet {
+      padding: 0 20px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+
+    @include mvp-tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__left-col {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: $color-blue-charcoa;
+    align-items: center;
+    justify-content: center;
+    margin: 0 70px 0 0;
+
+    @include mvp-tablet {
+      width: 47px;
+      height: 20px;
+    }
+
+    @include mvp-mobile {
+      margin: 0 70px 0 0;
+    }
+  }
+
+  &__menu-icon {
+    height: 23px;
+    width: 60px;
+
+    @include mvp-tablet {
+      height: 18px;
+      width: 47px;
+    }
+  }
+
+  &__logo-link {
+    height: 26px;
+    width: 114px;
+    display: flex;
+    color: $color-blue-charcoa;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.7;
+    }
+
+    @include mvp-tablet {
+      height: 24px;
+      width: 105px;
+    }
+
+    @include mvp-mobile {
+      height: 20px;
+      width: 88px;
+
+      svg {
+        height: 20px;
+        width: 88px;
+      }
+    }
+  }
+
+  &__page {
+    font-size: 18px;
+    line-height: 26px;
+    display: block;
+
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include mvp-tablet {
+      display: none;
+    }
+  }
+
+  &__right-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include mvp-tablet {
+      gap: 20px;
+      font-size: 14px;
+    }
+  }
+
+  &__link {
+    @include mvp-mobile {
+      display: none;
+    }
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.7;
+    }
+  }
+
+  &__phone-text {
+    @include mvp-tablet {
+      display: none;
+    }
+  }
+
+  &__phone-icon {
+    height: 24px;
+    width: 24px;
+    display: none;
+
+    @include mvp-tablet {
+      display: flex;
+    }
+  }
+}

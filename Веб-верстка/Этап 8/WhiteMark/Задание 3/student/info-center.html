@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Информационный центр - Sminex - ИНТЕКО</title>
+</head>
+
+<body>
+<header class="header">
+  <div class="container header__container">
+    <div class="header__content">
+      <div class="header__left-col">
+        <button class="header__menu" type="button" aria-label="Переключатель меню">
+          <svg class="header__menu-icon" width="60" height="23" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <a class="header__logo-link" href="#" aria-label="Переход на главную страницу">
+          <svg class="header__logo" width="114" height="26" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <span class="header__page">Информационный центр</span>
+      <div class="header__right-col">
+        <a class="header__link" href="#">Выбрать недвижимость</a>
+        <a class="header__phone" href="tel:+74951851408" aria-label="Позвонить в компанию">
+          <span class="header__phone-text">+7 495 185 14 08</span>
+          <svg class="header__phone-icon" width="24" height="24" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-phone"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="filters">
+    <div class="container">
+      <h1 class="visually-hidden">Информационный центр</h1>
+      <div class="filters__wrapper">
+        <ul class="filters__list">
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Все проекты</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter btn--filter-active" type="button">Все</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Sminex</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Малая Ордынка&nbsp;19</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Ильинка 3/8</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Городская усадьба</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Врубеля&nbsp;4</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Фрунзенская набережная</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Достижение</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Тишинский бульвар</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Вестердам</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Лаврушинский</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Обыденский &#8470;&nbsp;1</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">West Garden</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">Чистые пруды</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">LIFE TIME</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn btn--filter" type="button">TWIST</button>
+          </li>
+        </ul>
+        <div class="filters__display-wrapper">
+          <button class="btn btn--display btn--display-active filters__btn">
+            <svg class="filters__btn-icon" width="24" height="24">
+              <use xlink:href="images/sprite.svg#icon-list"></use>
+            </svg>
+            <span class="filters__btn-text">Списком</span>
+          </button>
+          <button class="btn btn--display filters__btn">
+            <svg class="filters__btn-icon" width="24" height="24">
+              <use xlink:href="images/sprite.svg#icon-grid"></use>
+            </svg>
+            <span class="filters__btn-text">Плиткой</span>
+          </button>
+        </div>
+      </div>
+      <div class="filters__divider"></div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="container">
+      <ul class="news__list">
+        <li class="news__item">
+          <a class="post-card">
+
+            <div class="post-card__images">
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-1-list-mobile.jpg 1x, images/news/img-1-list-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-1-list-tablet.jpg 1x, images/news/img-1-list-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--list" src="images/news/img-1-list.jpg" srcset="images/news/img-1-list@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+  
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-1-grid-mobile.jpg 1x, images/news/img-1-grid-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-1-grid-tablet.jpg 1x, images/news/img-1-grid-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--grid" src="images/news/img-1-grid.jpg" srcset="images/news/img-1-grid@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+            </div>
+
+            <div class="post-card__text-wrapper">
+              <div class="post-card__info">
+                <h2 class="post-card__heading">Sminex приступил к&nbsp;фасадным работам в&nbsp;клубном доме &laquo;Чистые Пруды&raquo;</h2>
+                <div class="post-card__meta">
+                  <span class="post-card__date">12&nbsp;апреля 2024</span>
+                  <button class="btn btn--filter post-card__btn">Чистые пруды</button>
+                </div>
+              </div>
+              <p class="post-card__description">Девелопер реставрирует кирпичную кладку наружных стен здания, построенного в&nbsp;1915 году по&nbsp;проекту архитектора Отто фон Дессина. Завершить фасадные работы планируется в&nbsp;декабре этого года. Клубный дом &laquo;Чистые Пруды&raquo; расположен в&nbsp;глубине тихого Потаповского переулка, в&nbsp;50&nbsp;метрах от&nbsp;знаменитого одноимённого пруда. Sminex проводит бережную реконструкцию здания, чтобы сохранить его изысканную ...</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+</body>
+
+</html>

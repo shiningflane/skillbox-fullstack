@@ -1,0 +1,44 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: unset;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+
+	&--filter {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 1.43;
+		color: $color-blue-charcoa;
+		background-color: $color-ecru-white;
+		padding: 8px 16px;
+		border-radius: 60px;
+
+		@include mvp-mobile {
+			font-size: 12px;
+			line-height: 1.33;
+		}
+
+		&-active {
+			background-color: $color-blue-charcoa;
+			color: $color-white;
+		}
+	}
+
+	&--display {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		font-size: 18px;
+		line-height: 1.44;
+		color: $color-mischka;
+
+		&-active {
+			color: $color-blue-charcoa;
+		}
+	}
+}

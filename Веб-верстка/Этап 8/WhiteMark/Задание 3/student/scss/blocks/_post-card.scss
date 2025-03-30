@@ -1,0 +1,164 @@
+.post-card {
+	padding: 60px 28px;
+	display: grid;
+	grid-template-columns: 340px 1fr;
+	align-items: flex-start;
+	column-gap: 100px;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $color-iron;
+	}
+
+	@media (max-width: 1250px) {
+		grid-template-columns: 280px 1fr;
+		column-gap: 50px;
+	}
+
+	@include mvp-tablet {
+		padding: 30px 0px;
+		column-gap: 50px;
+	}
+
+	@include mvp-mobile {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__images {
+		width: 100%;
+
+		@media (max-width: 1250px) {
+			height: 100%;
+		}
+
+		@include mvp-tablet {
+			// width: 100%;
+			// height: auto;
+		}
+	}
+
+	&__img {
+		width: 100%;
+
+		@media (max-width: 1250px) {
+			height: 100%;
+		}
+
+		@include mvp-tablet {
+			// width: 100%;
+			// height: auto;
+		}
+
+		&--grid {
+			display: none;
+		}
+	}
+
+	&__text-wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+
+		@include mvp-tablet {
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		@include mvp-mobile {
+			flex-direction: column;
+			gap: 15px;
+			justify-content: flex-start;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: flex-start;
+		max-width: 400px;
+		width: 100%;
+		flex-shrink: 5;
+
+		@media (max-width: 1250px) {
+			justify-content: space-between;
+		}
+
+		@include mvp-tablet {
+			align-items: stretch;
+			max-width: unset;
+			gap: 15px;
+		}
+
+		@include mvp-mobile {
+			flex-direction: column-reverse;
+			gap: 9px;
+		}
+	}
+
+	&__heading {
+		font-weight: 200;
+		font-size: 24px;
+		line-height: 1.167;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: $color-blue-charcoa;
+		margin: 0;
+
+		@include mvp-mobile {
+			font-size: 20px;
+			line-height: 1.2;
+		}
+	}
+
+	&__meta {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		@include mvp-tablet {
+			flex-direction: row;
+			// justify-content: space-between;
+			align-items: center;
+		}
+
+		@include mvp-mobile {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&__date {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 1.43;
+		color: $color-mischka;
+
+		@include mvp-mobile {
+			font-size: 12px;
+			line-height: 1.33;
+		}
+	}
+
+	&__description {
+		max-width: 400px;
+		width: 100%;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 1.444;
+		color: $color-blue-charcoa;
+		margin: 0;
+		flex-shrink: 4;
+
+		@include mvp-tablet {
+			font-size: 14px;
+			line-height: 1.33;
+			max-width: unset;
+		}
+
+		@include mvp-mobile {
+			font-size: 12px;
+		}
+	}
+}
