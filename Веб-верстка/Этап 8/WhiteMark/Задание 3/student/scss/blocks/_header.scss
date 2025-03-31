@@ -1,17 +1,17 @@
 .header {
   $root: &;
-  padding: 20px 0 19px;
-  border-bottom: 1px solid $color-gainsboro;
+  // padding: 20px 0 19px;
+  // border-bottom: 1px solid $color-gainsboro;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   background-color: $color-white;
   z-index: 10;
-  margin: 0 0 40px;
+  // margin: 0 0 40px;
 
   @include mvp-tablet {
-    padding: 17px 0 16px;
+    // padding: 17px 0 16px;
   }
 
   .container {
@@ -23,15 +23,26 @@
     }
   }
 
+  &__container {
+    z-index: 10;
+
+    &--menu {
+      display: none;
+      overflow-y: auto;
+    }
+  }
+
   &__content {
     position: relative;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr auto 1fr;
     gap: 20px;
+    padding: 20px 0 19px;
 
     @include mvp-tablet {
       grid-template-columns: 1fr 1fr;
+      padding: 18px 0 17px;
     }
   }
 
@@ -51,6 +62,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 70px 0 0;
+    cursor: pointer;
 
     @include mvp-tablet {
       width: 47px;
@@ -59,6 +71,44 @@
 
     @include mvp-mobile {
       margin: 0 70px 0 0;
+    }
+
+    &-wrapper {
+      display: none;
+      padding: 20px 0 20px 0;
+      // width: 100%;
+      // height: 100%;
+      // width: 100%;
+      // height: calc(100vh - 80px);
+      // position: fixed;
+      // top: 80px;
+
+      @include mvp-tablet {
+        // height: calc(100vh - 60px);
+      }
+    }
+
+    &--close {
+      width: 40px;
+      height: 40px;
+      margin: 0 90px 0 0;
+      display: none;
+
+      @include mvp-tablet {
+        width: 32px;
+        height: 32px;
+        margin: 0 85px 0 0;
+      }
+
+      .header__menu-icon {
+        width: 40px;
+        height: 40px;
+
+        @include mvp-tablet {
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
 
@@ -168,6 +218,245 @@
 
     @include mvp-tablet {
       display: flex;
+    }
+  }
+
+  &__divider {
+    width: 100vw;
+    height: 1px;
+    background-color: $color-gainsboro;
+  }
+
+  &__socials {
+    position: absolute;
+    right: 50px;
+    top: calc(50% - 80px);
+    transform: translateY(calc(-50% + 80px));
+
+    @include mvp-tablet {
+      right: 20px;
+    }
+
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 52px;
+
+      @include mvp-tablet {
+        gap: 44px;
+      }
+    }
+
+    &-link {
+      display: flex;
+      color: $color-davy-grey;
+
+      &:hover,
+      &:focus-visible {
+        color: $color-white;
+      }
+    }
+
+    &-icon {
+      
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 90px;
+    // position: absolute;
+    // left: 50%;
+    // top: 25%;
+    // transform: translateX(-50%);
+    // overflow: auto;
+
+    @media (max-width: 1500px) {
+      gap: 80px 60px;
+    }
+    
+    @media (max-width: 1350px) {
+      grid-template-columns: repeat(2, 280px);
+      grid-template-rows: auto auto;
+      grid-auto-flow: column;
+    }
+
+    @include mvp-tablet {
+      // gap: 80px 60px;
+    }
+
+    @include mvp-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @include mvp-tablet {
+        gap: 35px;
+      }
+
+      @include mvp-mobile {
+        gap: 20px;
+      }
+    }
+
+    &-link {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 1.167;
+      letter-spacing: 0.02em;
+      color: $color-white-50;
+
+      @include mvp-tablet {
+        font-size: 20px;
+        line-height: 1.2;
+      }
+
+      @include mvp-mobile {
+        font-size: 16px;
+        line-height: 1.25;
+      }
+
+      &--small {
+        font-size: 18px;
+        line-height: 1.44;
+        letter-spacing: 0;
+
+        @include mvp-tablet {
+          font-size: 14px;
+          line-height: 1.43;
+        }
+      }
+
+      &:hover,
+      &:focus-visible {
+        color: $color-white;
+      }
+    }
+
+
+
+
+
+
+    &-btn {
+      display: none;
+
+      @include mvp-mobile {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+
+  &--menu-open {
+    background-color: $color-blue-charcoa;
+
+    #{$root} {
+
+      &__divider {
+        background-color: $color-outer-space;
+      }
+
+      &__container {
+
+        &--menu {
+          display: flex;
+          height: calc(100vh - 80px);
+          width: 100%;
+          overflow-y: auto;
+          // position: absolute;
+          // top: 80px;
+          // left: 0;
+          background-color: $color-blue-charcoa;
+
+          @include mvp-tablet {
+          height: calc(100vh - 60px);
+          }
+        }
+      }
+
+      &__content {
+        color: $color-white;
+
+        @include mvp-tablet {
+          padding: 14px 0 13px;
+        }
+      }
+
+      &__menu {
+        display: none;
+        color: $color-white;
+
+        &--close {
+          display: flex;
+        }
+      }
+
+      &__logo-link {
+        color: $color-white;
+      }
+
+      &__link {
+        color: $color-white;
+
+        &:hover,
+        &:focus-visible {
+          color: $color-ecru-white;
+          text-decoration: none;
+        }
+      }
+
+      &__phone {
+        
+        &-text {
+          color: $color-white;
+        }
+
+        &-icon {
+          color: $color-white;
+        }
+      }
+
+      &__menu-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10%;
+
+        @include mvp-tablet {
+          margin-top: 8.5%;
+        }
+
+        @include mvp-mobile {
+          justify-content: flex-start;
+          margin: 0;
+          padding: 40px 34px 40px 0;
+        }
+      }
     }
   }
 }

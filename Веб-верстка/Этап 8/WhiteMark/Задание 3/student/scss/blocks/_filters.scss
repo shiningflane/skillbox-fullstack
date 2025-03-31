@@ -19,14 +19,14 @@
 		// padding-bottom: 20px;
 
 		@include mvp-tablet {
-		
-		}
-	
-		@include mvp-mobile {
 			flex-direction: row;
 			justify-content: space-between;
 			padding-top: 15px;
 			// padding-bottom: 15px;
+		}
+	
+		@include mvp-mobile {
+			
 		}
 	}
 
@@ -46,7 +46,7 @@
 			display: none;
 		}
 
-		@include mvp-mobile {
+		@include mvp-tablet {
 
 			&:first-child {
 				display: flex;
@@ -80,7 +80,7 @@
 
 		&-text {
 
-			@include mvp-mobile {
+			@include mvp-tablet {
 				display: none;
 			}
 		}

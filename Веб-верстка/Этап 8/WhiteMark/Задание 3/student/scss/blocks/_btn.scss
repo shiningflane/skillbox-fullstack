@@ -26,6 +26,12 @@
 			background-color: $color-blue-charcoa;
 			color: $color-white;
 		}
+
+		&:hover,
+		&:focus-visible {
+			outline: none;
+			background-color: $color-chrome-white;
+		}
 	}
 
 	&--display {
@@ -39,6 +45,13 @@
 
 		&-active {
 			color: $color-blue-charcoa;
+		}
+
+		&:hover,
+		&:focus-visible {
+			outline: none;
+			text-decoration: underline;
+			text-underline-offset: 3px;
 		}
 	}
 }

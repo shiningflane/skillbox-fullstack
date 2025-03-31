@@ -10,13 +10,21 @@
 </head>
 
 <body>
-<header class="header">
+
+<!-- ! Для раскрытия бургерного меню использовать класс header--menu-open -->
+
+<header class="header ">
   <div class="container header__container">
     <div class="header__content">
       <div class="header__left-col">
-        <button class="header__menu" type="button" aria-label="Переключатель меню">
+        <button class="header__menu" type="button" aria-label="Открыть меню">
           <svg class="header__menu-icon" width="60" height="23" aria-hidden="true">
             <use xlink:href="images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button class="header__menu header__menu--close" type="button" aria-label="Закрыть меню">
+          <svg class="header__menu-icon" width="40" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <a class="header__logo-link" href="#" aria-label="Переход на главную страницу">
@@ -36,6 +44,105 @@
         </a>
       </div>
     </div>
+    
+    
+  </div>
+  <div class="header__divider"></div>
+  <div class="container header__container header__container--menu">
+    <div class="header__menu-wrapper">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">FINE DEVELOPMENT</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">ОТ&nbsp;ПРОЕКТА К&nbsp;РЕАЛЬНОСТИ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">ПОРТФОЛИО</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">СЛУЖБА КОМФОРТА</a>
+          </li>
+        </ul>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">СКОРО В&nbsp;ПРОДАЖЕ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--small" href="#">Фрунзенская набережная</a>
+          </li>
+        </ul>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--small" href="#">Работодатель &#8470;&nbsp;1</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--small" href="#">Информационный центр</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--small" href="#">Кабинет брокера</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--small" href="#">Тендеры и&nbsp;сотрудничество</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--small" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="header__nav-btn" href="#">выбрать недвижимость
+          <svg class="header__nav-icon" width="40" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-next"></use>
+          </svg>
+        </a>
+      </nav>
+      <div class="header__socials">
+        <ul class="header__socials-list">
+          <li class="header__socials-item">
+            <a class="header__socials-link" href="#">
+              <svg class="header__socials-icon" width="24" height="24" aria-label="Написать нам в Whatsapp">
+                <use xlink:href="images/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__socials-item">
+            <a class="header__socials-link" href="#">
+              <svg class="header__socials-icon" width="24" height="24" aria-label="Написать нам в Whatsapp">
+                <use xlink:href="images/sprite.svg#icon-tg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__socials-item">
+            <a class="header__socials-link" href="#">
+              <svg class="header__socials-icon" width="24" height="24" aria-label="Написать нам в Whatsapp">
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__socials-item">
+            <a class="header__socials-link" href="#">
+              <svg class="header__socials-icon" width="24" height="24" aria-label="Написать нам в Whatsapp">
+                <use xlink:href="images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__socials-item">
+            <a class="header__socials-link" href="#">
+              <svg class="header__socials-icon" width="24" height="24" aria-label="Написать нам в Whatsapp">
+                <use xlink:href="images/sprite.svg#icon-dzen"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__socials-item">
+            <a class="header__socials-link" href="#">
+              <svg class="header__socials-icon" width="24" height="24" aria-label="Написать нам в Whatsapp">
+                <use xlink:href="images/sprite.svg#icon-hh"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
 <main>
@@ -44,6 +151,9 @@
       <h1 class="visually-hidden">Информационный центр</h1>
       <div class="filters__wrapper">
         <ul class="filters__list">
+          
+          <!--! Для показа активной кнопки фильтра используется класс btn--filter-active -->
+          
           <li class="filters__item">
             <button class="btn btn--filter" type="button">Все проекты</button>
           </li>
@@ -97,14 +207,17 @@
           </li>
         </ul>
         <div class="filters__display-wrapper">
-          <button class="btn btn--display btn--display-active filters__btn">
-            <svg class="filters__btn-icon" width="24" height="24">
+
+          <!--! Для показа активной кнопки типа отображения статей используется класс btn--display-active -->
+          
+          <button class="btn btn--display btn--display-active filters__btn" type="button">
+            <svg class="filters__btn-icon" width="24" height="24" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-list"></use>
             </svg>
             <span class="filters__btn-text">Списком</span>
           </button>
-          <button class="btn btn--display filters__btn">
-            <svg class="filters__btn-icon" width="24" height="24">
+          <button class="btn btn--display filters__btn" type="button">
+            <svg class="filters__btn-icon" width="24" height="24" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-grid"></use>
             </svg>
             <span class="filters__btn-text">Плиткой</span>
@@ -116,9 +229,17 @@
   </section>
   <section class="news">
     <div class="container">
-      <ul class="news__list">
+
+      <!-- ! Для смены типа отображения списка на плитку используется класс news__list--grid -->
+
+      <ul class="news__list ">
+
+        <!-- Карточка 1 -->
         <li class="news__item">
-          <a class="post-card">
+
+          <!-- ! Для смены типа отображения карточек на плитку используется класс post-card--grid -->
+
+          <a class="post-card " href="#">
 
             <div class="post-card__images">
               <picture>
@@ -139,10 +260,184 @@
                 <h2 class="post-card__heading">Sminex приступил к&nbsp;фасадным работам в&nbsp;клубном доме &laquo;Чистые Пруды&raquo;</h2>
                 <div class="post-card__meta">
                   <span class="post-card__date">12&nbsp;апреля 2024</span>
-                  <button class="btn btn--filter post-card__btn">Чистые пруды</button>
+                  <span class="btn btn--filter post-card__btn">Чистые пруды</span>
                 </div>
               </div>
               <p class="post-card__description">Девелопер реставрирует кирпичную кладку наружных стен здания, построенного в&nbsp;1915 году по&nbsp;проекту архитектора Отто фон Дессина. Завершить фасадные работы планируется в&nbsp;декабре этого года. Клубный дом &laquo;Чистые Пруды&raquo; расположен в&nbsp;глубине тихого Потаповского переулка, в&nbsp;50&nbsp;метрах от&nbsp;знаменитого одноимённого пруда. Sminex проводит бережную реконструкцию здания, чтобы сохранить его изысканную ...</p>
+            </div>
+          </a>
+        </li>
+
+        <!-- Карточка 2 -->
+        <li class="news__item">
+
+          <!-- ! Для смены типа отображения карточек на плитку используется класс post-card--grid -->
+
+          <a class="post-card " href="#">
+
+            <div class="post-card__images">
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-2-list-mobile.jpg 1x, images/news/img-2-list-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-2-list-tablet.jpg 1x, images/news/img-2-list-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--list" src="images/news/img-2-list.jpg" srcset="images/news/img-2-list@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+  
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-2-grid-mobile.jpg 1x, images/news/img-2-grid-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-2-grid-tablet.jpg 1x, images/news/img-2-grid-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--grid" src="images/news/img-2-grid.jpg" srcset="images/news/img-2-grid@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+            </div>
+
+            <div class="post-card__text-wrapper">
+              <div class="post-card__info">
+                <h2 class="post-card__heading">&laquo;Дзен&raquo;. Главные места и&nbsp;секреты Чистых прудов</h2>
+                <div class="post-card__meta">
+                  <span class="post-card__date">8&nbsp;апреля 2024</span>
+                  <span class="btn btn--filter post-card__btn">Чистые пруды</span>
+                </div>
+              </div>
+              <p class="post-card__description">Чистые пруды хранят дух исконной Москвы и&nbsp;при этом обладают всеми преимуществами мегаполиса. Здесь есть свои тайны, знаковые места и&nbsp;современные пентхаусы. <br>&bull; Как Чистые пруды стали чистыми и&nbsp;при чём тут британцы?<br>&bull; Что Булгаков переместил с&nbsp;Чистых прудов на&nbsp;Патриаршие в&nbsp;романе &quot;Мастер и&nbsp;Маргарита&quot;?<br>&bull; Как доходный дом начала&nbsp;ХХ века получил новое содержание и&nbsp;стал клубным? ...</p>
+            </div>
+          </a>
+        </li>
+
+        <!-- Карточка 3 -->
+        <li class="news__item">
+
+          <!-- ! Для смены типа отображения карточек на плитку используется класс post-card--grid -->
+
+          <a class="post-card " href="#">
+
+            <div class="post-card__images">
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-3-list-mobile.jpg 1x, images/news/img-3-list-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-3-list-tablet.jpg 1x, images/news/img-3-list-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--list" src="images/news/img-3-list.jpg" srcset="images/news/img-3-list@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+  
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-3-grid-mobile.jpg 1x, images/news/img-3-grid-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-3-grid-tablet.jpg 1x, images/news/img-3-grid-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--grid" src="images/news/img-3-grid.jpg" srcset="images/news/img-3-grid@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+            </div>
+
+            <div class="post-card__text-wrapper">
+              <div class="post-card__info">
+                <h2 class="post-card__heading">Высокий спрос привёл к&nbsp;росту цен на&nbsp;элитную недвижимость Остоженки</h2>
+                <div class="post-card__meta">
+                  <span class="post-card__date">4&nbsp;апреля 2024</span>
+                  <!-- <span class="btn btn--filter post-card__btn">Чистые пруды</span> -->
+                </div>
+              </div>
+              <p class="post-card__description">В&nbsp;2023 году объем предложения элитных квартир в&nbsp;районе Остоженки составил 29,9&nbsp;тыс.&nbsp;кв.&nbsp;м, а&nbsp;к&nbsp;концу&nbsp;I квартала 2024-го он&nbsp;уменьшился до&nbsp;26,8&nbsp;кв.&nbsp;м. Сейчас здесь продаются четыре строящихся дома. На&nbsp;фоне уменьшения предложения средняя стоимость&nbsp;кв.&nbsp;м&nbsp;в&nbsp;них за&nbsp;прошедший год увеличилась на&nbsp;23%&nbsp;&mdash; с&nbsp;2,5 до&nbsp;3,1 млн рублей. Самые дорогие лоты&nbsp;&mdash; пентхаусы&nbsp;&mdash; выросли в&nbsp;цене на&nbsp;16%, с&nbsp;4,3 до&nbsp;5&nbsp;млн рублей ...</p>
+            </div>
+          </a>
+        </li>
+
+        <!-- Карточка 4 -->
+        <li class="news__item">
+
+          <!-- ! Для смены типа отображения карточек на плитку используется класс post-card--grid -->
+
+          <a class="post-card " href="#">
+
+            <div class="post-card__images">
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-4-list-mobile.jpg 1x, images/news/img-4-list-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-4-list-tablet.jpg 1x, images/news/img-4-list-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--list" src="images/news/img-4-list.jpg" srcset="images/news/img-4-list@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+  
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-4-grid-mobile.jpg 1x, images/news/img-4-grid-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-4-grid-tablet.jpg 1x, images/news/img-4-grid-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--grid" src="images/news/img-4-grid.jpg" srcset="images/news/img-4-grid@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+            </div>
+
+            <div class="post-card__text-wrapper">
+              <div class="post-card__info">
+                <h2 class="post-card__heading">Sminex создаёт самый близкий к&nbsp;Кремлю всесезонный двор-сад</h2>
+                <div class="post-card__meta">
+                  <span class="post-card__date">4&nbsp;апреля 2024</span>
+                  <span class="btn btn--filter post-card__btn">Ильинка 3/8</span>
+                </div>
+              </div>
+              <p class="post-card__description">В&nbsp;коллекции клубных особняков &laquo;Ильинка 3/8&raquo; благоустройство занимает 1700&nbsp;кв.&nbsp;м. Девелопер представил концепцию двора-сада, в&nbsp;которой гармонично соединяет исторические детали XIX века и&nbsp;современные технологии комфорта. В&nbsp;приватном пространстве жители наслаждаются цветущим круглый год садом&nbsp;&mdash; всего в&nbsp;ботанической коллекции больше 6600&nbsp;растений. Территория клубных особняков в&nbsp;160 метрах от&nbsp;Красной площади начинается ...</p>
+            </div>
+          </a>
+        </li>
+
+        <!-- Карточка 5 -->
+        <li class="news__item">
+
+          <!-- ! Для смены типа отображения карточек на плитку используется класс post-card--grid -->
+
+          <a class="post-card " href="#">
+
+            <div class="post-card__images">
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-5-list-mobile.jpg 1x, images/news/img-5-list-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-5-list-tablet.jpg 1x, images/news/img-5-list-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--list" src="images/news/img-5-list.jpg" srcset="images/news/img-5-list@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+  
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-5-grid-mobile.jpg 1x, images/news/img-5-grid-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-5-grid-tablet.jpg 1x, images/news/img-5-grid-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--grid" src="images/news/img-5-grid.jpg" srcset="images/news/img-5-grid@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+            </div>
+
+            <div class="post-card__text-wrapper">
+              <div class="post-card__info">
+                <h2 class="post-card__heading">Видео. Ювелирное воссоздание барельефов &laquo;Ильинки 3/8&raquo;</h2>
+                <div class="post-card__meta">
+                  <span class="post-card__date">3&nbsp;апреля 2024</span>
+                  <span class="btn btn--filter post-card__btn">Ильинка 3/8</span>
+                </div>
+              </div>
+              <p class="post-card__description">Грифон, пардус, лев и&nbsp;птица Сирин&nbsp;&mdash; существа из&nbsp;славянской мифологии. Они символизируют величие, изящество, благородство и&nbsp;радость.Барельефы с&nbsp;этими волшебными созданиями охраняют покой и&nbsp;благополучие жителей &laquo;Ильинки 3/8&raquo;, создавая неповторимый облик клубных особняков в&nbsp;160 метрах от&nbsp;Красной площади. Об&nbsp;идее создания артефактов и&nbsp;её&nbsp;воплощении в&nbsp;камне руками иранских мастеров смотрите в&nbsp;новом видео ...</p>
+            </div>
+          </a>
+        </li>
+
+        <!-- Карточка 6 -->
+        <li class="news__item">
+
+          <!-- ! Для смены типа отображения карточек на плитку используется класс post-card--grid -->
+
+          <a class="post-card " href="#">
+
+            <div class="post-card__images">
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-6-list-mobile.jpg 1x, images/news/img-6-list-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-6-list-tablet.jpg 1x, images/news/img-6-list-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--list" src="images/news/img-6-list.jpg" srcset="images/news/img-6-list@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+  
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/news/img-6-grid-mobile.jpg 1x, images/news/img-6-grid-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/news/img-6-grid-tablet.jpg 1x, images/news/img-6-grid-tablet@2x.jpg 2x">
+                <img class="post-card__img post-card__img--grid" src="images/news/img-6-grid.jpg" srcset="images/news/img-6-grid@2x.jpg 2x" alt="Фотография поста">
+              </picture>
+            </div>
+
+            <div class="post-card__text-wrapper">
+              <div class="post-card__info">
+                <h2 class="post-card__heading">РБК. Пять зданий с&nbsp;эффектной архитектурой, которые скоро построят в&nbsp;Москве</h2>
+                <div class="post-card__meta">
+                  <span class="post-card__date">3&nbsp;апреля 2024</span>
+                  <!-- <span class="btn btn--filter post-card__btn">Чистые пруды</span> -->
+                </div>
+              </div>
+              <p class="post-card__description">Редакция &laquo;РБК-Недвижимости&raquo; заглянула в&nbsp;будущее и&nbsp;выбрала пять новых архитектурных символов, которые скоро появятся в&nbsp;Москве.<br>
+                &bull; Технопарк со&nbsp;светопрозрачным фасадом в&nbsp;неофутуристичном стиле<br>
+                &bull; Бионические фасады с&nbsp;окнами, из&nbsp;которых открываются панорамы Кремля<br>
+                &bull; Музей в&nbsp;стиле необрутализма на&nbsp;территории монастыря<br>
+                &bull; Школа будущего как из&nbsp;произведений ...</p>
             </div>
           </a>
         </li>
