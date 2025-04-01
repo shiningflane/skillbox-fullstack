@@ -603,10 +603,8 @@ a {
   background-color: #e2e2e2;
 }
 .header__socials {
-  position: absolute;
-  right: 50px;
-  top: calc(50% - 80px);
-  transform: translateY(calc(-50% + 80px));
+  margin-bottom: -40px;
+  padding-bottom: 40px;
 }
 @media (max-width: 1023px) {
   .header__socials {
@@ -642,6 +640,8 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 350px);
   gap: 90px;
+  margin: 0 auto;
+  padding-left: 24px;
 }
 @media (max-width: 1500px) {
   .header__nav {
@@ -660,6 +660,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding: 0;
+    margin: 0;
   }
 }
 .header__nav-list {
@@ -792,9 +794,9 @@ a {
 }
 @media (max-width: 767px) {
   .header--menu-open .header__menu-wrapper {
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 0;
-    padding: 40px 34px 40px 0;
+    padding: 40px 0;
   }
 }
 
@@ -1119,9 +1121,30 @@ a {
   gap: unset;
   align-items: unset;
   position: relative;
+  min-height: 360px;
+  height: 100%;
+}
+@media (max-width: 1023px) {
+  .post-card--grid {
+    min-height: 440px;
+  }
+}
+@media (max-width: 767px) {
+  .post-card--grid {
+    min-height: 200px;
+  }
+}
+.post-card--grid:hover, .post-card--grid:focus-visible {
+  background-color: unset;
 }
 .post-card--grid:hover .post-card__images::before, .post-card--grid:focus-visible .post-card__images::before {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.post-card--grid .post-card__images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
 .post-card--grid .post-card__images::before {
   content: "";
@@ -1130,6 +1153,9 @@ a {
   position: absolute;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
+.post-card--grid .post-card__img {
+  height: 100%;
+}
 .post-card--grid .post-card__img--list {
   display: none;
 }
@@ -1137,10 +1163,9 @@ a {
   display: block;
 }
 .post-card--grid .post-card__text-wrapper {
-  display: unset;
+  display: flex;
   gap: unset;
   justify-content: unset;
-  position: absolute;
   width: 100%;
   height: 100%;
   padding: 40px;
