@@ -1,0 +1,167 @@
+.link {
+  $root: &;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-family: inherit;
+  color: $color-black;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &--small {
+    font-size: 16px;
+    line-height: 24px;
+    gap: 6px;
+
+    #{$root}__icon {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  &--double {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+
+    #{$root}__text-begin,
+    #{$root}__icon-begin,
+    #{$root}__text-final,
+    #{$root}__icon-final {
+      transition: transform $transition-300, opacity $transition-300;
+    }
+
+    &:hover,
+    &:focus-visible {
+      #{$root}__text-begin {
+        transform: translateX(10px);
+        opacity: 0;
+      }
+
+      #{$root}__icon-begin {
+        transform: translateX(-10px);
+        opacity: 0;
+      }
+
+      #{$root}__text-final,
+      #{$root}__icon-final {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      #{$root}__inner--final {
+        pointer-events: all;
+      }
+    }
+  }
+
+  &--dots {
+    &:hover,
+    &:focus-visible {
+      #{$root}__dots {
+        transform: scale(2.5);
+        transition-delay: 0.2s;
+      }
+
+      #{$root}__dot {
+        transition-delay: 0s;
+      }
+
+      #{$root}__dot--lt {
+        transform: translate(9px, 9px);
+      }
+
+      #{$root}__dot--lc {
+        transform: translateX(9px);
+      }
+
+      #{$root}__dot--lb {
+        transform: translate(9px, -9px);
+      }
+
+      #{$root}__dot--ct {
+        transform: translateY(9px);
+      }
+
+      #{$root}__dot--cb {
+        transform: translateY(-9px);
+      }
+
+      #{$root}__dot--rt {
+        transform: translate(-9px, 9px);
+      }
+
+      #{$root}__dot--rc {
+        transform: translateX(-9px);
+      }
+
+      #{$root}__dot--rb {
+        transform: translate(-9px, -9px);
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    &--final {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+  }
+
+  &__text {
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $color-black;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity $transition-300;
+    }
+  }
+
+  &__text-final {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+  &__dot {
+    transition-delay: 0.3s;
+    transition: transform $transition-300 0.3s;
+  }
+
+  &__dots {
+    transition: transform $transition-300;
+  }
+
+  &__icon-final {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus-visible {
+    &:not(span, .link--double) {
+      #{$root}__text::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__icon {
+    transition: transform $transition-300;
+  }
+}
