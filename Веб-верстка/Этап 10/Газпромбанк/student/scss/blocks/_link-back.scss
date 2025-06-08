@@ -1,0 +1,22 @@
+.link-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  outline: none;
+  $root: &;
+
+  &:hover,
+  &:focus-visible {
+    #{$root}__text {
+      color: $color-blue;
+    }
+  }
+
+  &__text {
+    color: $color-suva-grey;
+    transition: $transition-300;
+  }
+}
