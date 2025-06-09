@@ -1,4 +1,4 @@
-.card-info-banner {
+.post-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,6 +6,7 @@
   padding: 32px;
   border-radius: 20px;
   background: $color-white;
+  cursor: pointer;
   $root: &;
 
   @include vp-1023 {
@@ -16,6 +17,14 @@
   @include vp-767 {
     min-height: 366px;
     padding: 40px 32px;
+  }
+
+  &:hover,
+  &:focus-visible {
+
+    #{$root}__img {
+      transform: translate(-15px, 15px);
+    }
   }
 
   &--top {
@@ -34,6 +43,8 @@
     width: 228px;
     height: 228px;
     object-fit: contain;
+    pointer-events: none;
+    transition: $transition-300;
 
     @media (max-width: 1299px) {
       right: -30px;

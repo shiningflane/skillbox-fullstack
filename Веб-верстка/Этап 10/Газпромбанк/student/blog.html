@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="/fonts/Unbounded-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/Unbounded-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
   <link rel="shortcut icon" href="/favicon/favicon.ico" />
@@ -12,18 +14,19 @@
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="css/style.css">
   <title>Блог - Газпромбанк.Тех</title>
+  <meta name="description" content="Узнай, как мы запускаем и развиваем IT-продукты в Газпромбанке. Знакомься с последними новостями из мира финтеха.">
 </head>
 
 <body>
 <header class="header">
   <div class="container">
     <div class="header__wrapper">
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="#" aria-label="Вернуться на главную страницу">
         <svg class="header__logo-icon" width="354" height="19" aria-hidden="true">
           <use xlink:href="images/sprite.svg#icon-logo-header"></use>
         </svg>
       </a>
-      <button class="header__burger burger">
+      <button class="header__burger burger" type="button" aria-label="Открыть бургерное меню">
         <svg width="32" height="32" aria-hidden="true">
           <use xlink:href="images/sprite.svg#icon-burger"></use>
         </svg>
@@ -72,77 +75,148 @@
   <section class="blog-filter">
     <h2 class="visually-hidden">Фильтр</h2>
     <div class="container">
-      <ul class="blog-filter__list">
-        <li class="blog-filter__item">
-          <button class="blog-filter__button blog-filter__button--active" type="button">ВСЕ</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">DevOps</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">UX</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Анализ данных</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Архитектура</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Геймификация</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">ДБО</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Дизайн</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Инновации</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Исследования</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Карьера</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Маркетинг</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Менеджмент</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Отчет</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Поддержка</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Продвижение</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Разработка</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Сервисы</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Системы</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Событие</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Тестирование</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Технологии</button>
-        </li>
-        <li class="blog-filter__item">
-          <button class="blog-filter__button" type="button">Финтех</button>
-        </li>
-      </ul>
+      <form class="blog-filter__form">
+        <ul class="blog-filter__list">
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-all" name="filter-all" checked>
+              <label class="custom-filter__label" for="filter-all">ВСЕ</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-devops" name="filter-devops">
+              <label class="custom-filter__label" for="filter-devops">DevOps</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-ux" name="filter-ux">
+              <label class="custom-filter__label" for="filter-ux">UX</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-data-analysis" name="filter-data-analysis">
+              <label class="custom-filter__label" for="filter-data-analysis">Анализ данных</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-architecture" name="filter-architecture">
+              <label class="custom-filter__label" for="filter-architecture">Архитектура</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-gamification" name="filter-gamification">
+              <label class="custom-filter__label" for="filter-gamification">Геймификация</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-dbo" name="filter-dbo">
+              <label class="custom-filter__label" for="filter-dbo">ДБО</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-design" name="filter-design">
+              <label class="custom-filter__label" for="filter-design">Дизайн</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-innovations" name="filter-innovations">
+              <label class="custom-filter__label" for="filter-innovations">Инновации</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-research" name="filter-research">
+              <label class="custom-filter__label" for="filter-research">Исследования</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-career" name="filter-career">
+              <label class="custom-filter__label" for="filter-career">Карьера</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-marketing" name="filter-marketing">
+              <label class="custom-filter__label" for="filter-marketing">Маркетинг</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-management" name="filter-management">
+              <label class="custom-filter__label" for="filter-management">Менеджмент</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-report" name="filter-report">
+              <label class="custom-filter__label" for="filter-report">Отчет</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-support" name="filter-support">
+              <label class="custom-filter__label" for="filter-support">Поддержка</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-advertisement" name="filter-advertisement">
+              <label class="custom-filter__label" for="filter-advertisement">Продвижение</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-development" name="filter-development">
+              <label class="custom-filter__label" for="filter-development">Разработка</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-services" name="filter-services">
+              <label class="custom-filter__label" for="filter-services">Сервисы</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-systems" name="filter-systems">
+              <label class="custom-filter__label" for="filter-systems">Системы</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-event" name="filter-event">
+              <label class="custom-filter__label" for="filter-event">Событие</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-qa" name="filter-qa">
+              <label class="custom-filter__label" for="filter-qa">Тестирование</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-tech" name="filter-tech">
+              <label class="custom-filter__label" for="filter-tech">Технологии</label>
+            </div>
+          </li>
+          <li class="blog-filter__item">
+            <div class="custom-filter">
+              <input class="custom-filter__box visually-hidden" type="checkbox" id="filter-fintech" name="filter-fintech">
+              <label class="custom-filter__label" for="filter-fintech">Финтех</label>
+            </div>
+          </li>
+        </ul>
+      </form>
     </div>
   </section>
   <section class="blog-list">
@@ -150,7 +224,7 @@
     <div class="container">
       <ul class="blog-list__grid">
         <li class="blog-list__item">
-          <div class="card-info-banner">
+          <a class="post-card" href="#" aria-label="Открыть статью">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                       srcset="images/blog-img-mob-1.webp 1x, images/blog-img-mob-1@2x.webp 2x">
@@ -160,22 +234,22 @@
               <source media="(max-width: 767px)" srcset="images/blog-img-mob-1.png 1x, images/blog-img-mob-1@2x.png 2x">
               <source media="(max-width: 1023px)"
                       srcset="images/blog-img-tablet-1.png 1x, images/blog-img-tablet-1@2x.png 2x">
-              <img class="card-info-banner__img" src="images/blog-img-1.png" srcset="images/blog-img-1@2x.png 2x" width="228"
+              <img class="post-card__img" src="images/blog-img-1.png" srcset="images/blog-img-1@2x.png 2x" width="228"
                    height="228"
                    alt="">
             </picture>
-            <ul class="card-info-banner__tags">
-              <li class="card-info-banner__tag">Карьера</li>
-              <li class="card-info-banner__tag">Разработка</li>
+            <ul class="post-card__tags">
+              <li class="post-card__tag">Карьера</li>
+              <li class="post-card__tag">Разработка</li>
             </ul>
-            <div class="card-info-banner__content">
-              <p class="card-info-banner__date">14/06/2024</p>
-              <a href="#" class="card-info-banner__title">Kubernetes: шпаргалка для собеседования. Часть&nbsp;1</a>
+            <div class="post-card__content">
+              <p class="post-card__date">14/06/2024</p>
+              <h2 class="post-card__title">Kubernetes: шпаргалка для собеседования. Часть&nbsp;1</h2>
             </div>
-          </div>
+          </a>
         </li>
-        <li class="blog-list__item blog-list__item--top">
-          <div class="card-info-banner card-info-banner--top">
+        <li class="blog-list__item">
+          <a class="post-card post-card--top" href="#" aria-label="Открыть статью">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                       srcset="images/blog-img-mob-2.webp 1x, images/blog-img-mob-2@2x.webp 2x">
@@ -185,22 +259,22 @@
               <source media="(max-width: 767px)" srcset="images/blog-img-mob-2.png 1x, images/blog-img-mob-2@2x.png 2x">
               <source media="(max-width: 1023px)"
                       srcset="images/blog-img-tablet-2.png 1x, images/blog-img-tablet-2@2x.png 2x">
-              <img class="card-info-banner__img" src="images/blog-img-2.png" srcset="images/blog-img-2@2x.png 2x" width="228"
+              <img class="post-card__img" src="images/blog-img-2.png" srcset="images/blog-img-2@2x.png 2x" width="228"
                    height="228"
                    alt="">
             </picture>
-            <ul class="card-info-banner__tags">
-              <li class="card-info-banner__tag">Карьера</li>
-              <li class="card-info-banner__tag">Разработка</li>
+            <ul class="post-card__tags">
+              <li class="post-card__tag">Карьера</li>
+              <li class="post-card__tag">Разработка</li>
             </ul>
-            <div class="card-info-banner__content">
-              <p class="card-info-banner__date">03/06/2024</p>
-              <a href="#" class="card-info-banner__title">С&nbsp;завода в&nbsp;ИТ: почему менять карьерный трек никогда не&nbsp;поздно</a>
+            <div class="post-card__content">
+              <p class="post-card__date">03/06/2024</p>
+              <h2 class="post-card__title">С&nbsp;завода в&nbsp;ИТ: почему менять карьерный трек никогда не&nbsp;поздно</h2>
             </div>
-          </div>
+          </a>
         </li>
         <li class="blog-list__item">
-          <div class="card-info-banner">
+          <a class="post-card" href="article.html" aria-label="Открыть статью">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                       srcset="images/blog-img-mob-3.webp 1x, images/blog-img-mob-3@2x.webp 2x">
@@ -210,21 +284,21 @@
               <source media="(max-width: 767px)" srcset="images/blog-img-mob-3.png 1x, images/blog-img-mob-3@2x.png 2x">
               <source media="(max-width: 1023px)"
                       srcset="images/blog-img-tablet-3.png 1x, images/blog-img-tablet-3@2x.png 2x">
-              <img class="card-info-banner__img" src="images/blog-img-3.png" srcset="images/blog-img-3@2x.png 2x" width="228"
+              <img class="post-card__img" src="images/blog-img-3.png" srcset="images/blog-img-3@2x.png 2x" width="228"
                    height="228"
                    alt="">
             </picture>
-            <ul class="card-info-banner__tags">
-              <li class="card-info-banner__tag">Карьера</li>
+            <ul class="post-card__tags">
+              <li class="post-card__tag">Карьера</li>
             </ul>
-            <div class="card-info-banner__content">
-              <p class="card-info-banner__date">27/05/2024</p>
-              <a href="#" class="card-info-banner__title">Как стать идеальным кандидатом на&nbsp;собеседовании и&nbsp;повысить шансы&nbsp;на...</a>
+            <div class="post-card__content">
+              <p class="post-card__date">27/05/2024</p>
+              <h2 class="post-card__title">Как стать идеальным кандидатом на&nbsp;собеседовании и&nbsp;повысить шансы&nbsp;на...</h2>
             </div>
-          </div>
+          </a>
         </li>
         <li class="blog-list__item">
-          <div class="card-info-banner">
+          <a class="post-card" href="#" aria-label="Открыть статью">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                       srcset="images/blog-img-mob-4.webp 1x, images/blog-img-mob-4@2x.webp 2x">
@@ -234,22 +308,22 @@
               <source media="(max-width: 767px)" srcset="images/blog-img-mob-4.png 1x, images/blog-img-mob-4@2x.png 2x">
               <source media="(max-width: 1023px)"
                       srcset="images/blog-img-tablet-4.png 1x, images/blog-img-tablet-4@2x.png 2x">
-              <img class="card-info-banner__img" src="images/blog-img-4.png" srcset="images/blog-img-4@2x.png 2x" width="228"
+              <img class="post-card__img" src="images/blog-img-4.png" srcset="images/blog-img-4@2x.png 2x" width="228"
                    height="228"
                    alt="">
             </picture>
-            <ul class="card-info-banner__tags">
-              <li class="card-info-banner__tag">Маркетинг</li>
-              <li class="card-info-banner__tag">Системы</li>
+            <ul class="post-card__tags">
+              <li class="post-card__tag">Маркетинг</li>
+              <li class="post-card__tag">Системы</li>
             </ul>
-            <div class="card-info-banner__content">
-              <p class="card-info-banner__date">23/05/2024</p>
-              <a href="#" class="card-info-banner__title">Переход на&nbsp;новую платформу CRM: Газпромбанк принимает вызов</a>
+            <div class="post-card__content">
+              <p class="post-card__date">23/05/2024</p>
+              <h2 class="post-card__title">Переход на&nbsp;новую платформу CRM: Газпромбанк принимает вызов</h2>
             </div>
-          </div>
+          </a>
         </li>
-        <li class="blog-list__item blog-list__item--top">
-          <div class="card-info-banner card-info-banner--top">
+        <li class="blog-list__item">
+          <a class="post-card post-card--top" href="#" aria-label="Открыть статью">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                       srcset="images/blog-img-mob-5.webp 1x, images/blog-img-mob-5@2x.webp 2x">
@@ -259,22 +333,22 @@
               <source media="(max-width: 767px)" srcset="images/blog-img-mob-5.png 1x, images/blog-img-mob-5@2x.png 2x">
               <source media="(max-width: 1023px)"
                       srcset="images/blog-img-tablet-5.png 1x, images/blog-img-tablet-5@2x.png 2x">
-              <img class="card-info-banner__img" src="images/blog-img-5.png" srcset="images/blog-img-5@2x.png 2x" width="228"
+              <img class="post-card__img" src="images/blog-img-5.png" srcset="images/blog-img-5@2x.png 2x" width="228"
                    height="228"
                    alt="">
             </picture>
-            <ul class="card-info-banner__tags">
-              <li class="card-info-banner__tag">Маркетинг</li>
-              <li class="card-info-banner__tag">Системы</li>
+            <ul class="post-card__tags">
+              <li class="post-card__tag">Маркетинг</li>
+              <li class="post-card__tag">Системы</li>
             </ul>
-            <div class="card-info-banner__content">
-              <p class="card-info-banner__date">16/05/2024</p>
-              <a href="#" class="card-info-banner__title">CRM для розницы: растет и&nbsp;меняется вместе с&nbsp;бизнесом</a>
+            <div class="post-card__content">
+              <p class="post-card__date">16/05/2024</p>
+              <h2 class="post-card__title">CRM для розницы: растет и&nbsp;меняется вместе с&nbsp;бизнесом</h2>
             </div>
-          </div>
+          </a>
         </li>
         <li class="blog-list__item">
-          <div class="card-info-banner">
+          <a class="post-card" href="#" aria-label="Открыть статью">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                       srcset="images/blog-img-mob-6.webp 1x, images/blog-img-mob-6@2x.webp 2x">
@@ -284,21 +358,21 @@
               <source media="(max-width: 767px)" srcset="images/blog-img-mob-6.png 1x, images/blog-img-mob-6@2x.png 2x">
               <source media="(max-width: 1023px)"
                       srcset="images/blog-img-tablet-6.png 1x, images/blog-img-tablet-6@2x.png 2x">
-              <img class="card-info-banner__img" src="images/blog-img-6.png" srcset="images/blog-img-6@2x.png 2x" width="228"
+              <img class="post-card__img" src="images/blog-img-6.png" srcset="images/blog-img-6@2x.png 2x" width="228"
                    height="228"
                    alt="">
             </picture>
-            <ul class="card-info-banner__tags">
-              <li class="card-info-banner__tag">Геймификация</li>
+            <ul class="post-card__tags">
+              <li class="post-card__tag">Геймификация</li>
             </ul>
-            <div class="card-info-banner__content">
-              <p class="card-info-banner__date">07/05/2024</p>
-              <a href="#" class="card-info-banner__title">Геймификация процессов: как в&nbsp;Газпромбанке создают игры для сотрудников</a>
+            <div class="post-card__content">
+              <p class="post-card__date">07/05/2024</p>
+              <h2 class="post-card__title">Геймификация процессов: как в&nbsp;Газпромбанке создают игры для сотрудников</h2>
             </div>
-          </div>
+          </a>
         </li>
       </ul>
-      <button class="blog-list__more">Ещё публикации</button>
+      <button class="blog-list__more" type="button">Ещё публикации</button>
     </div>
   </section>
 </main>
@@ -311,7 +385,7 @@
       <div class="footer__column">
         <div class="footer__contacts">
           <span class="footer__contacts-title">Почта:</span>
-          <a class="footer__contacts-link" href="#">space @gazprombank.ru</a>
+          <a class="footer__contacts-link" href="mailto:space@gazprombank.ru">space @gazprombank.ru</a>
         </div>
         <div class="footer__contacts">
           <span class="footer__contacts-title">Адрес:</span>
@@ -321,7 +395,7 @@
     </div>
     <div class="footer__columns">
       <div class="footer__column">
-        <a class="footer__logo" href="#">
+        <a class="footer__logo" href="#" aria-label="Вернуться на главную страницу">
           <svg class="footer__logo-icon" width="354" height="19" aria-hidden="true">
             <use xlink:href="images/sprite.svg#icon-logo-header"></use>
           </svg>

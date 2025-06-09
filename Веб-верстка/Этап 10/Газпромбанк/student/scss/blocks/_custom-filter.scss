@@ -1,0 +1,48 @@
+.custom-filter {
+	$root: &;
+
+	&__box {
+		&:focus-visible {
+			+ #{$root}__label {
+				background-color: $color-dim-gray;
+				color: $color-white;
+			}
+		}
+	}
+
+	&__label {
+		align-items: center;
+		background-color: transparent;
+		border: 1px solid $color-dim-gray;
+		border-radius: 4px;
+		color: $color-dim-gray;
+		cursor: pointer;
+		display: flex;
+		font-size: 13px;
+		font-weight: 400;
+		justify-content: center;
+		line-height: 16px;
+		letter-spacing: 0;
+		padding: 7px;
+		transition:
+			background-color $transition-300,
+			color $transition-300,
+			border-color $transition-300;
+
+		&:hover {
+			background-color: $color-dim-gray;
+			color: $color-white;
+		}
+
+		@include vp-1023 {
+			font-size: 12px;
+			line-height: 14px;
+			padding: 7px 9px;
+		}
+	}
+
+	&__box:checked + .custom-filter__label {
+		color: $color-blue;
+		border: 1px solid $color-blue;
+	}
+}
