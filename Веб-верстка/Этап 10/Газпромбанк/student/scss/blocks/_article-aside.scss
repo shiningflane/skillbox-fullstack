@@ -55,6 +55,9 @@
 
   &__item {
     counter-increment: aside-list 1;
+  }
+
+  &__link {
     padding: 0 0 0 32px;
     position: relative;
 
@@ -69,21 +72,6 @@
       transition: $transition-300;
     }
 
-    &:has(#{$root}__link:hover, #{$root}__link:focus-visible) {
-      &::before {
-        color: $color-black;
-      }
-    }
-    
-    &:has(#{$root}__link:active) {
-      &::before {
-        color: $color-blue;
-        transition: none;
-      }
-    }
-  }
-
-  &__link {
     color: $color-dim-gray;
     display: flex;
     font-size: 13px;
@@ -94,11 +82,20 @@
     &:hover,
     &:focus-visible {
       color: $color-black;
+
+      &::before {
+      color: $color-black;
+    }
     }
 
     &:active {
       color: $color-blue;
       transition: none;
+
+      &::before {
+      color: $color-blue;
+      transition: none;
+    }
     }
   }
 
