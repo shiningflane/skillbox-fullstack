@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>5.4 Практика по теме «Создание элементов»</title>
+</head>
+<body>
+	<div class="content"></div>
+	<script>
+		const content = document.querySelector(".content");
+		const h2El = document.createElement("h2");
+		const pEl = document.createElement("p");
+
+		content.prepend(h2El, pEl);
+	</script>
+</body>
+</html>
