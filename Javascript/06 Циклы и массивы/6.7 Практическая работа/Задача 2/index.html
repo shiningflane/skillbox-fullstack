@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Практическая задача 2 по теме Циклы и массивы">
+	<title>Задача 2</title>
+</head>
+
+<body>
+	<h1>Поиск минимального и максимального числа</h1>
+	<p class="all-elements"></p>
+	<button class="min">Найти минимальное число</button>
+	<button class="max">Найти максимальное число</button>
+	<p>Минимальное число: <span class="minNumber"></span></p>
+	<p>Максимальное число: <span class="maxNumber"></span></p>
+</body>
+
+<script>
+	let numbers = [15, 27, 4, 11, 113, 10]
+
+	const allElements = document.querySelector('.all-elements');
+	const btnMin = document.querySelector('.min');
+	const btnMax = document.querySelector('.max');
+	const minNumEl = document.querySelector('.minNumber');
+	const maxNumEl = document.querySelector('.maxNumber');
+
+	for (const number of numbers) {
+		let newSpan = document.createElement('span');
+		newSpan.textContent = `${number}, `;
+		allElements.append(newSpan);
+	}
+
+	btnMin.onclick = giveMinNum;
+	btnMax.onclick = giveMaxNum;
+	
+	function giveMaxNum() {
+
+		let maxNum = numbers[0];
+
+		for (const number of numbers) {
+			if (Number(number) > maxNum) {
+				maxNum = Number(number)
+			} 
+		}
+
+		console.log('Максимальное число в массиве: ', maxNum);
+		
+		maxNumEl.textContent = maxNum;
+	}
+	
+	function giveMinNum() {
+
+		let minNum = numbers[0];
+
+		for (const number of numbers) {
+			if (Number(number) < minNum) {
+				minNum = Number(number)
+			} 
+		}
+
+		console.log('Минимальное число в массиве: ', minNum);
+		
+		minNumEl.textContent = minNum;
+	}
+	
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Практическая задача 1 по теме Циклы и массивы">
+	<title>Задача 1</title>
+</head>
+
+<body>
+	<h1>Список товаров</h1>
+	<ul class="products">
+		<!-- Список товаров будет сгенерирован здесь -->
+	</ul>
+</body>
+<script>
+	// Исходный массив с товарами
+	const products = ["Мышка", "Клавиатура", "Наушники"];
+	// Новые товары, которые нужно добавить ["Монитор", "Принтер", "Флешка"];
+	products.push("Монитор", "Принтер", "Флешка");
+
+	const ulEl = document.querySelector(".products");
+
+	for (const item of products) {
+		const newLiEl = document.createElement("li");
+		newLiEl.textContent = item;
+		ulEl.append(newLiEl)
+	}
+</script>
+
+</html>
