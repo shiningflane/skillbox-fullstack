@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Опрос пользователя</title>
+</head>
+<body>
+	<main>
+		<section class="poll">
+			<div class="container">
+				<h1 class="poll__heading">Форма опроса</h1>
+				<form class="form" action="#" method="get" name="poll">
+					<label>
+						Имя пользователя:
+						<input class="username" type="text" required>
+					</label>
+					<label>
+						Email:
+						<input class="email" type="email" required>
+					</label>
+					<div class="sex">
+						<span>Пол:</span>
+						<label>
+							<input class="sex-radio" type="radio" id="sex-men" name="sex" value="men">
+							Мужской
+						</label>
+						<label>
+							<input class="sex-radio" type="radio" id="sex-women" name="sex" value="women">
+							Женский
+						</label>
+					</div>
+					<label>
+						Оценка сервиса:
+						<input class="service" type="range" id="" name="service" min="1" max="10" step="1">
+					</label>
+					<div class="interests">
+						<p>Интересы пользователя:</p>
+						<label>
+							<input class="interest" type="checkbox" id="" name="interest" value="sport">
+							Спорт
+						</label>
+						<label>
+							<input class="interest" type="checkbox" id="" name="interest" value="music">
+							Музыка
+						</label>
+						<label>
+							<input class="interest" type="checkbox" id="" name="interest" value="adventure">
+							Путешествия
+						</label>
+						<label>
+							<input class="interest" type="checkbox" id="" name="interest" value="cinema">
+							Кино
+						</label>
+					</div>
+					<label>
+						Дополнительные комментарии:<br>
+						<textarea class="textarea" name="comments" id=""></textarea>
+					</label>
+					<button type="submit" class="button">Отправить</button>
+				</form>
+				<div class="form-result">
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+
+	<script src="index.js"></script>
+</body>
+</html>
