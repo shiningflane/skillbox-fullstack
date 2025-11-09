@@ -13,6 +13,10 @@ const promocodeArr = [
 	{
 		promocode: 'GIFT',
 		gift: "Подарок в корзине"
+	},
+	{
+		promocode: 'OLESYA',
+		gift: "Пинок под зад для ускорения"
 	}
 ]
 
