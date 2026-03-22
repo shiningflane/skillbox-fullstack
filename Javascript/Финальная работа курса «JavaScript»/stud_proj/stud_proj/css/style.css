@@ -2165,6 +2165,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
 }
 .custom-input__label {
   font-size: 16px;
@@ -2374,4 +2375,9 @@ button {
 }
 .modal__text {
   font-size: 18px;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  bottom: -2em;
 }/*# sourceMappingURL=style.css.map */

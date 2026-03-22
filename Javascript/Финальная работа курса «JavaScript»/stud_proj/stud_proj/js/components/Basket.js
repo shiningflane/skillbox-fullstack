@@ -1,9 +1,21 @@
 export function basketOpen() {
 	const basketButton = document.querySelector('#basket-button')
+	const basketEl = document.querySelector('.basket')
+
+	if (!basketButton || !basketEl) return
 
 	basketButton.addEventListener('click', function (e) {
-		const basketEl = document.querySelector('.basket')
+		e.stopPropagation()
 		basketEl.classList.toggle('basket--active')
+	})
+
+	document.addEventListener('click', function (e) {
+		const clickOnBasketBtn = e.target.closest('#basket-button')
+		const clickInsideBasket = e.target.closest('.basket')
+
+		if (!clickOnBasketBtn && !clickInsideBasket) {
+			basketEl.classList.remove('basket--active')
+		}
 	})
 }
 
@@ -34,6 +46,7 @@ export async function handleBasket(data) {
 	const basketProductRemoveButton = basketProduct.querySelector('.basket__item-close')
 	basketProductRemoveButton.addEventListener('click', function (e) {
 		e.preventDefault()
+		e.stopPropagation()
 		basketProduct.remove()
 		basketCounter.textContent--
 		if (!basketList.hasChildNodes()) {
